@@ -1,1 +1,6 @@
-site_name: 我的 mkdocs 文档
+site_name: 股票学习文档
+site_url: https://hellowac.github.io/stock_doc/
+nav:
+    - 主页: index.md
+    - 关于: about.md
+# theme: readthedocs
