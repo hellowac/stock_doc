@@ -1,8 +1,19 @@
 site_name: 股票学习文档
 site_url: https://hellowac.github.io/stock_doc/
 nav:
-    - 主页: index.md
-    - 关于: about.md
+    - 股票:
+      - 股票投资基础知识: 
+        - 什么是炒股: stock_base/what_stock.md
+        - 必须知道的概念: stock_base/must_know_concept.md
+        - 必懂的交易规则: stock_base/must_know_trading_rule.md
+        - 了解k线图: stock_base/know_k_graph.md
+        - 必须掌握的20种K线形态: stock_base/know_20_k_graph.md
+    - 关于: 
+      - 制作方式: index.md
+      - 主题: about.md
 theme: 
   name: 'material'
+  language: zh
+  features:
+    - announce.dismiss
 # theme: readthedocs
