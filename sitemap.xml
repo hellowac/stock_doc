@@ -2,42 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hellowac.github.io/stock_doc/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/about/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/down_k_graph/</loc>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/know_20_k_graph/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/know_k_graph/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/must_know_concept/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/must_know_trading_rule/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/up_k_graph/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/what_stock/</loc>
-         <lastmod>2022-05-10</lastmod>
+         <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
