@@ -6,12 +6,20 @@ nav:
         - 什么是炒股: stock_base/what_stock.md
         - 必须知道的概念: stock_base/must_know_concept.md
         - 必懂的交易规则: stock_base/must_know_trading_rule.md
+        - 估值指标市盈率: stock_base/valuation_pe_ratio.md
+        - 估值指标市净率: stock_base/valuation_pb_ratio.md
+        - 估值指标市销率: stock_base/valuation_ps_ratio.md
+        - 估值指标市现率: stock_base/valuation_pcf_ratio.md
         - 了解k线图: stock_base/know_k_graph.md
         - 必须掌握的20种K线形态: stock_base/know_20_k_graph.md
         - 经典的看涨K线组合: stock_base/up_k_graph.md
         - 经典的看跌K线组合: stock_base/down_k_graph.md
         - 一文了解均线: stock_base/know_moving_average.md
-        - 估值指标市盈率: stock_base/valuation_pe_ratio.md
+        - 均线使用中的常用知识: stock_base/common_used_moving_average.md
+        - 均线排列的含义: stock_base/moving_average_meaning.md
+        - 应对主力K线骗线的几种方法: stock_base/response_mainforce_cheat.md
+      - 筹码分布:
+        - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
     - 关于: 
       - 制作方式: index.md
       - 主题: about.md
