@@ -18,6 +18,10 @@ nav:
         - 均线使用中的常用知识: stock_base/common_used_moving_average.md
         - 均线排列的含义: stock_base/moving_average_meaning.md
         - 应对主力K线骗线的几种方法: stock_base/response_mainforce_cheat.md
+        - 如何利用均线判断股票的回调力度强弱: stock_base/know_mvoing_average_choice.md
+        - 常见的均线“买入”信号有哪些？: stock_base/know_buy_by_moving_average.md
+        - 常见的均线“卖出”信号有哪些？: stock_base/know_sale_by_moving_average.md
+        - 5日均线的常见用法有哪些？: stock_base/know_five_moving_average_usage.md
       - 筹码分布:
         - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
     - 关于: 
