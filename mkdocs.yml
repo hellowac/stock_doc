@@ -10,6 +10,7 @@ nav:
         - 估值指标市净率: stock_base/valuation_pb_ratio.md
         - 估值指标市销率: stock_base/valuation_ps_ratio.md
         - 估值指标市现率: stock_base/valuation_pcf_ratio.md
+        - 估值指标PEG: stock_base/valuation_peg_ratio.md
         - 了解k线图: stock_base/know_k_graph.md
         - 必须掌握的20种K线形态: stock_base/know_20_k_graph.md
         - 经典的看涨K线组合: stock_base/up_k_graph.md
@@ -22,6 +23,8 @@ nav:
         - 常见的均线“买入”信号有哪些？: stock_base/know_buy_by_moving_average.md
         - 常见的均线“卖出”信号有哪些？: stock_base/know_sale_by_moving_average.md
         - 5日均线的常见用法有哪些？: stock_base/know_five_moving_average_usage.md
+        - 什么是布林线？: stock_base/know_bolling_bands.md
+        - 布林线下轨的常见用法有哪些？: stock_base/boll_down_usage.md
       - 筹码分布:
         - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
     - 关于: 
