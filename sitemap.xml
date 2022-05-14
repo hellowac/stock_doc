@@ -31,12 +31,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/know_buy_by_moving_average/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/know_five_moving_average_usage/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/know_k_graph/</loc>
          <lastmod>2022-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/know_moving_average/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/know_mvoing_average_choice/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/know_sale_by_moving_average/</loc>
          <lastmod>2022-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
