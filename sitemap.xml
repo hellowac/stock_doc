@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/boll_down_usage/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/common_used_moving_average/</loc>
          <lastmod>2022-05-14</lastmod>
          <changefreq>daily</changefreq>
@@ -27,6 +32,11 @@
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/know_20_k_graph/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/know_bolling_bands/</loc>
          <lastmod>2022-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -97,6 +107,11 @@
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/stock_base/valuation_pe_ratio/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/stock_base/valuation_peg_ratio/</loc>
          <lastmod>2022-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
