@@ -25,6 +25,11 @@ nav:
         - 5日均线的常见用法有哪些？: stock_base/know_five_moving_average_usage.md
         - 什么是布林线？: stock_base/know_bolling_bands.md
         - 布林线下轨的常见用法有哪些？: stock_base/boll_down_usage.md
+        - 布林线的上、下开口形态: stock_base/boll_up_and_down_opening.md
+        - 布林线的喇叭口形态: stock_base/boll_flare_pattern.md
+        - 什么是MACD？: stock_base/what_is_macd.md
+        - MACD形态之顶背离: stock_base/macd_top_divergence.md
+        - MACD形态之底背离: stock_base/macd_down_divergence.md
       - 筹码分布:
         - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
     - 关于: 
