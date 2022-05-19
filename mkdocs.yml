@@ -30,6 +30,18 @@ nav:
         - 什么是MACD？: stock_base/what_is_macd.md
         - MACD形态之顶背离: stock_base/macd_top_divergence.md
         - MACD形态之底背离: stock_base/macd_down_divergence.md
+      - 均线策略:
+        - 为什么说均线是神奇的线?（上）: stock_base/average_line/01_base.md
+        - 为什么说均线是神奇的线？（下）: stock_base/average_line/02_base.md
+        - 均线不同排列形态意味着什么？（上）: stock_base/average_line/03_base.md
+        - 均线不同排列形态意味着什么？（下）: stock_base/average_line/04_base.md
+        - 格兰威尔八大买卖法则（上）: stock_base/average_line/05_base.md
+        - 格兰威尔八大买卖法则（下）: stock_base/average_line/06_base.md
+        - 双均线战法（上）-单均线VS双均线: stock_base/average_line/07_base.md
+        - 双均线战法（下）-双均线战法应用技巧: stock_base/average_line/08_base.md
+        - 三均线战法（上）: stock_base/average_line/09_base.md
+        - 三均线战法（下）: stock_base/average_line/10_base.md
+        - 一通百通，均线战法很轻松: stock_base/average_line/11_base.md
       - 筹码分布:
         - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
     - 债券:
