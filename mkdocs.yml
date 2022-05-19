@@ -1,4 +1,4 @@
-site_name: 股票学习文档
+site_name: 证券学习文档
 site_url: https://hellowac.github.io/stock_doc/
 nav:
     - 股票:
@@ -32,6 +32,16 @@ nav:
         - MACD形态之底背离: stock_base/macd_down_divergence.md
       - 筹码分布:
         - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
+    - 债券:
+      - 可转债: 
+        - 可转债基础: bond/convertible_bonds/01_base.md
+        - 中签和收益: bond/convertible_bonds/02_subscription.md
+        - 获利方式: bond/convertible_bonds/03_how_to_profit.md
+        - 相关常识: bond/convertible_bonds/04_moment_sense.md
+        - 计算溢价率: bond/convertible_bonds/05_cal_permium_rate.md
+        - 计算溢价率2: bond/convertible_bonds/06_cal_permium_rate.md
+        - 债性: bond/convertible_bonds/07_debt.md
+        - 风险: bond/convertible_bonds/08_risk.md
     - 关于: 
       - 制作方式: index.md
       - 主题: about.md
