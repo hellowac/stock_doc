@@ -6,6 +6,7 @@ nav:
       - 会计: business/account/base.md
       - 关键的财务报表: business/account/statements.md
       - 分析财务报表: business/account/analyze_statements.md
+      - 总结: business/account/summarize.md
   - 股票:
     - 股票投资基础知识: 
       - 什么是炒股: stock_base/what_stock.md
