@@ -1,0 +1,1895 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hellowac.github.io/stock_doc/stock/tech_article/time_chart_buy_skill/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+    
+    
+      
+        <title>分时图表买点技巧 - 证券学习文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e411adfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#v" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="证券学习文档" class="md-header__button md-logo" aria-label="证券学习文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            证券学习文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              分时图表买点技巧
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="证券学习文档" class="md-nav__button md-logo" aria-label="证券学习文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    证券学习文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          认识商业
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="认识商业" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          认识商业
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_1">
+          理解会计和财务指标
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="理解会计和财务指标" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          理解会计和财务指标
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../business/account/base/" class="md-nav__link">
+        会计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../business/account/statements/" class="md-nav__link">
+        关键的财务报表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../business/account/analyze_statements/" class="md-nav__link">
+        分析财务报表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../business/account/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          股票
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="股票" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          股票
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          股票投资基础知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="股票投资基础知识" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          股票投资基础知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/what_stock/" class="md-nav__link">
+        什么是炒股
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/must_know_concept/" class="md-nav__link">
+        必须知道的概念
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/must_know_trading_rule/" class="md-nav__link">
+        必懂的交易规则
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/valuation_pe_ratio/" class="md-nav__link">
+        估值指标市盈率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/valuation_pb_ratio/" class="md-nav__link">
+        估值指标市净率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/valuation_ps_ratio/" class="md-nav__link">
+        估值指标市销率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/valuation_pcf_ratio/" class="md-nav__link">
+        估值指标市现率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/valuation_peg_ratio/" class="md-nav__link">
+        估值指标PEG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_k_graph/" class="md-nav__link">
+        了解k线图
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_20_k_graph/" class="md-nav__link">
+        必须掌握的20种K线形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/up_k_graph/" class="md-nav__link">
+        经典的看涨K线组合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/down_k_graph/" class="md-nav__link">
+        经典的看跌K线组合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_moving_average/" class="md-nav__link">
+        一文了解均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/common_used_moving_average/" class="md-nav__link">
+        均线使用中的常用知识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/moving_average_meaning/" class="md-nav__link">
+        均线排列的含义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/response_mainforce_cheat/" class="md-nav__link">
+        应对主力K线骗线的几种方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_mvoing_average_choice/" class="md-nav__link">
+        如何利用均线判断股票的回调力度强弱
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_buy_by_moving_average/" class="md-nav__link">
+        常见的均线“买入”信号有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_sale_by_moving_average/" class="md-nav__link">
+        常见的均线“卖出”信号有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_five_moving_average_usage/" class="md-nav__link">
+        5日均线的常见用法有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/know_bolling_bands/" class="md-nav__link">
+        什么是布林线？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/boll_down_usage/" class="md-nav__link">
+        布林线下轨的常见用法有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/boll_up_and_down_opening/" class="md-nav__link">
+        布林线的上、下开口形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/boll_flare_pattern/" class="md-nav__link">
+        布林线的喇叭口形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/what_is_macd/" class="md-nav__link">
+        什么是MACD？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/macd_top_divergence/" class="md-nav__link">
+        MACD形态之顶背离
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base/macd_down_divergence/" class="md-nav__link">
+        MACD形态之底背离
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          均线策略
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="均线策略" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          均线策略
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/01_base/" class="md-nav__link">
+        为什么说均线是神奇的线?（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/02_base/" class="md-nav__link">
+        为什么说均线是神奇的线？（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/03_base/" class="md-nav__link">
+        均线不同排列形态意味着什么？（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/04_base/" class="md-nav__link">
+        均线不同排列形态意味着什么？（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/05_base/" class="md-nav__link">
+        格兰威尔八大买卖法则（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/06_base/" class="md-nav__link">
+        格兰威尔八大买卖法则（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/07_base/" class="md-nav__link">
+        双均线战法（上）-单均线VS双均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/08_base/" class="md-nav__link">
+        双均线战法（下）-双均线战法应用技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/09_base/" class="md-nav__link">
+        三均线战法（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/10_base/" class="md-nav__link">
+        三均线战法（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../average_line/11_base/" class="md-nav__link">
+        一通百通，均线战法很轻松
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          筹码分布
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="筹码分布" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          筹码分布
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../chip_distribution/double_peaks_and_valleys/" class="md-nav__link">
+        分布形态之双峰填谷
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          技术文章
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="技术文章" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          技术文章
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          分时图表买点技巧
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        分时图表买点技巧
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    认清股市的真实面目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    分时图“猫腻”多多
+  </a>
+  
+    <nav class="md-nav" aria-label="分时图“猫腻”多多">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    分时图基础知识
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    分时图五种基本买卖点
+  </a>
+  
+    <nav class="md-nav" aria-label="分时图五种基本买卖点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    一，平开高走型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    二，平开低走型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    三，冲高回落型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    四，探底回升型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    五，横盘震荡型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    总结两点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    分时图操作原则
+  </a>
+  
+    <nav class="md-nav" aria-label="分时图操作原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1、 均线持续运行向上
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2、组织放量拉升
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3、突破日内新高
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    分时买入技巧
+  </a>
+  
+    <nav class="md-nav" aria-label="分时买入技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    一、平开低走快速击穿均价线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    二、高开低走击破均价线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    三、平台调整型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    四、高开高走回调不破均线形
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v_1" class="md-nav__link">
+    分时V型反转选股公式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    是什么影响了 中国股市 ？
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          债券
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="债券" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          债券
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          可转债
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="可转债" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          可转债
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/01_base/" class="md-nav__link">
+        可转债基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/02_subscription/" class="md-nav__link">
+        中签和收益
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/03_how_to_profit/" class="md-nav__link">
+        获利方式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/04_moment_sense/" class="md-nav__link">
+        相关常识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/05_cal_permium_rate/" class="md-nav__link">
+        计算溢价率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/06_cal_permium_rate/" class="md-nav__link">
+        计算溢价率2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/07_debt/" class="md-nav__link">
+        债性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bond/convertible_bonds/08_risk/" class="md-nav__link">
+        风险
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          关于
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="关于" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          关于
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        制作方式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        主题
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    认清股市的真实面目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    分时图“猫腻”多多
+  </a>
+  
+    <nav class="md-nav" aria-label="分时图“猫腻”多多">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    分时图基础知识
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    分时图五种基本买卖点
+  </a>
+  
+    <nav class="md-nav" aria-label="分时图五种基本买卖点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    一，平开高走型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    二，平开低走型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    三，冲高回落型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    四，探底回升型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    五，横盘震荡型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    总结两点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    分时图操作原则
+  </a>
+  
+    <nav class="md-nav" aria-label="分时图操作原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1、 均线持续运行向上
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2、组织放量拉升
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3、突破日内新高
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    分时买入技巧
+  </a>
+  
+    <nav class="md-nav" aria-label="分时买入技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    一、平开低走快速击穿均价线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    二、高开低走击破均价线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    三、平台调整型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    四、高开高走回调不破均线形
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v_1" class="md-nav__link">
+    分时V型反转选股公式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    是什么影响了 中国股市 ？
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="v">分时图表“V型”反转买点技巧</h1>
+<p>原文: <a href="https://mp.weixin.qq.com/s/3IcHKaGxskJUO5a8pHbZSg">https://mp.weixin.qq.com/s/3IcHKaGxskJUO5a8pHbZSg</a></p>
+<p>闭眼也能在股市赚钱（附战法）</p>
+<p>股票，就像人，也有自己的品格和个性。有的股票弦绷得紧紧的，个性紧张，动作呈跳跃状；还有的股票则性格豪爽，动作直来直去，合乎逻辑；总有一天你会了解并尊重各种证券的个性。在各自不同的条件下，它们的动作都是可以预测的。</p>
+<p>市场从不停止变化。有时候，它们非常呆滞，但并不是在哪个价位上睡大觉。它们总要稍稍上升或下降。当一个股票进入明确趋势状态后，它将自动地运作，前后一致地沿着贯穿 整个趋势过程的特定线路演变下去。</p>
+<p>当这轮运动开始的时候，开头几天你会注意到，伴随着价格的逐渐上涨，形成了非常巨大的成交量。随后，将发生我所称的“正常的回撤”。在这个向下回落过程中，成交量远远小于前几天上升时期。这种小规模回撤行情完全是正常的。永远不要害怕这种正常的动作。然而，一定要十分害怕不正常的动作。</p>
+<p>一到二天之后，行动将重新开始，成交量随之增加。如果这是一个真动作，那么在短时间内市场就会收复在那个自然的、正常的回撤过程中丢失的地盘，并将在新高区域内运行。这个过程应当在几天之内一直维持着强劲的势头，其中仅仅含有小规模的日内回调。或迟或早，它将达到某一点，又该形成另一轮正常的向下回撤了。当这个正常回撤发生时，它应当和第一次正常回撤落在同一组直线上，当处于明确趋势状态时，任何股票都会按照此类自然的方式演变。在这轮运动的第一部分，从前期高点到下一个高点之间的差距并不很大。但是你将注意到，随着时间的推移，它将向上拓展大得多的净空高度。</p>
+<p><img alt="1" src="../../../img/stock03.webp" /></p>
+<p>炒股，是发财的途径吗？</p>
+<p>什么叫发财？发财是相对而言。</p>
+<p>十万变成100万，有人觉得发财了，上海人民撇了撇嘴，100万在上海只能买像样的厕所。</p>
+<p>100万变成1000万，在上海能买三房两厅，算是个“正常公民”了。</p>
+<p>所以，发财是相对的嘛，相对的是你的本金。本金小，再大的盈利，绝对值也不够。只有规模才能产生效益。</p>
+<p><img alt="2" src="../../../img/stock04.webp" /></p>
+<p>问题来了，你凭什么通过股市，把一百万变成一千万？</p>
+<p>你是敢一把梭重仓贵州茅台呢，还是说你有惊为天人的天赋，比如杰西李佛摩尔，天生对数字极为敏感。或者说，你像威廉西蒙斯，从数学家转行投资，创建大奖章基金，年化收益45%，用数学模型投资？</p>
+<p>都没有。事后诸葛亮好做。假如我当初重仓贵州茅台的话.......</p>
+<p>所以说，股市要发财，大多数人不行，连可能性都没有。</p>
+<p>股市只是一个工作区域，提供一个挣钱的机会。入门很容易，挣钱不容易。</p>
+<p>要想挣钱，你必须要有两样武器，否则就是裸奔。</p>
+<p>第一，你要有交易系统，做系统交易。</p>
+<p>第二，你要有<strong>优秀的个人品质</strong>，并且这类品质符合博弈的需要。</p>
+<p><img alt="3" src="../../../img/stock05.webp" /></p>
+<p>关于第一点，绝大多数人没有，关于第二点，绝大多数人以为自己有，其实也没有。</p>
+<p>交易系统就是用来做系统交易的。听着很绕，其实很简单。你有没有一套交易标准，让你知道什么时候买，什么时候卖？并且这个标准屡试不爽，从来不出大错，从来不产生巨亏，忠实滴保护你的本金，为你不断挣钱？</p>
+<p>如果你有，你是高手。如果你没有，你要去学。</p>
+<p>交易系统让你做系统交易，当系统发出交易信号的时候，你只要像机器人一样去执行，你信任它就像信任你麻麻。</p>
+<p>关于优秀品质，不是助人为乐，乐善好施。</p>
+<p>股市里的优秀品质是：冷血。</p>
+<p>在生活里你冷血，你是动物。在股市里你冷血，你是王者。</p>
+<p>你可能曾经是个王者，直到你遇到了股市......</p>
+<p>股市的优秀品质只在股市里适用。系统交易会培养出你的冷血。</p>
+<p>总结一下，能做到第一，就会产生第二。第二又会完善第一</p>
+<h2 id="_1">认清股市的真实面目</h2>
+<p><strong>市场最不缺少的是机会，而缺少的是耐心</strong>。市场不会关门，它一直在为投资者敞开着，给有准备的投资者以机会，给盲目的投资者以教训！现在你可以问自己一个很现实的问题：我凭什么在股市中赚钱？如果你还没有一个具体的答案，那么可以说，即使你在股市中赚了第一桶金也都是浮云，终究还是会“还”给市场。因为你不知道它如何而来，它必然同样让你不知道如何而去。可以说，你的投资计划越明确、越具体，那么你就越有可能赢，也越有可能赢得更久。</p>
+<p>进入股市，就得把自己当作渔夫和猎户，要具备优秀猎户的品质，在狩猎不同的猎物时，要有针对性地选择适合猎物习性的方法。正如你想要钓到鱼，就得学会鱼的思考方式，当给予鱼以蚯蚓为诱饵的时候，它才会上钩。圆的世界、相通的事告诉我们道理就是这么简单，而掌握猎物的习性，却需要长时间的感悟修为。</p>
+<h2 id="_2">分时图“猫腻”多多</h2>
+<p>分时图，对众多股民来说并不陌生，它呈现个股一天的走势趋势图。但就是这样简单的分时图，就能够在分时图的一些走势提前预知涨跌。</p>
+<h3 id="_3">分时图基础知识</h3>
+<p>1、<strong>黄色曲线</strong>：该股票即时成交的平均价格,即当天成交总金额除以成交总股数。</p>
+<p>2、<strong>白色曲线</strong>：该股票即时实时成交的价格。</p>
+<p>3、<strong>黄色柱线</strong>：在红白曲线图下方,用来表示每一分钟的成交量,单位为手(100股/手)。</p>
+<p><img alt="4" src="../../../img/stock06.webp" /></p>
+<p><strong>注意事项</strong></p>
+<p>一天的分时图上，可以找到股票走势较为简洁的形态，这种形态是区间是否清晰明显的分时形态。</p>
+<p>股价呈上升或下降通道运行，走势是否明显，此区间多为观望区间，不宜进行操作;</p>
+<p>分时图中股价走势溢出原势区间，改变了上涨或下跌的斜率，此区间内股价既有按原趋势运行的可能，也有形成反转的可能，此区间是重要的决策区间;</p>
+<p>分时图中，股价走势对转势区间进行突破，方向可以向上，也可以向下，此区间是最为重要的操作区间。</p>
+<h2 id="_4">分时图五种基本买卖点</h2>
+<h3 id="_5">一，平开高走型</h3>
+<p><img alt="5" src="../../../img/stock07.webp" /></p>
+<p>黄线跟着白线上行，白线回落黄线不破，再回落还不破，且黄线之中向上运行，那么，十点30分白线再上台阶就是买点!当天大概率有盈利。</p>
+<h3 id="_6">二，平开低走型</h3>
+<p><img alt="5" src="../../../img/stock08.webp" /></p>
+<p>图二刚好与图一相反，开盘黄线就压着白线下移，十点半前白线反抽黄线两次三次精准的突破不上来，那么十点半后就是卖点!大概率就是一路出溜儿下去了。</p>
+<h3 id="_7">三，冲高回落型</h3>
+<p><img alt="5" src="../../../img/stock09.webp" /></p>
+<p>早晨走的好好的上扬，十点半前后白线回落黄线的时候破掉了，那么中午收盘前看能否站回来且站稳再上扬，如果不能站回或者站回再破或者站回也不上扬，则下午开盘后就是卖点!要站回上午就站回了，上午站不会的话下午大概率也没戏。</p>
+<h3 id="_8">四，探底回升型</h3>
+<p><img alt="5" src="../../../img/stock10.webp" /></p>
+<p>和图三刚好相反，早晨下探别急着恐慌，当十点后发现黄线走平之后就可以再看看，十点半后白线站回黄线且上扬，那么下午开盘后发现白线回踩不破又谈起，且黄线开始拐头向上了，就是加仓时机!</p>
+<h3 id="_9">五，横盘震荡型</h3>
+<p><img alt="5" src="../../../img/stock11.webp" /></p>
+<p>无论低开高开，十点半前后我们看到分时白线和分时黄线上下穿行，即白线回落时黄线撑不住或者白线反抽时黄线拦不住，反复，那么全天也就这样了。</p>
+<h3 id="_10">总结两点</h3>
+<p>一是早晨没必要还没开盘就去赌，十点半看清楚趋势了再动手也来得及。</p>
+<p>二是今天只是基本形态的规矩走势，且都是大概率情况，不要钻牛角尖!世界上唯一不变的就是变化。</p>
+<p>对于短线操作者，分时图是很重要的一个指标，能直接反应股价波动的轨迹，在分时走势图中还会暴露庄家对股价未来走势的潜在意图。</p>
+<p>每个人都想买股票的时候买在最低点，卖股票的时候买在最高点。可现实却很骨感，现实中大多数人都是在高点去买进的，一买进就开始跌，接踵而至的就是被套。虽然咱们做不到在最低点买入，但是也不能在最高点去追。笔者今天给大家讲下怎么看分时图买在低点。</p>
+<h2 id="_11">分时图操作原则</h2>
+<h3 id="1">1、 均线持续运行向上</h3>
+<p><img alt="5" src="../../../img/stock12.jpeg" /></p>
+<p>不管大盘怎么样，只买分时图均线向上并且持续运行在黄线上方的股票。</p>
+<h3 id="2">2、组织放量拉升</h3>
+<p><img alt="5" src="../../../img/stock13.webp" /></p>
+<p>日内的分时组织进攻很重要，早上出现一两波有组织的分时放量拉升，之后产生第三波主升动作概率会很大。</p>
+<h3 id="3">3、突破日内新高</h3>
+<p><img alt="5" src="../../../img/stock14.webp" /></p>
+<p><img alt="5" src="../../../img/stock15.webp" /></p>
+<p>关键买入点位置，通常我选择个股在突破日内新高的位置买入，这时候涨幅最多在3-5个点内，如果刚好碰到大盘跳水，就形成了之前讲的分时起涨，在大盘跳水+个股抗跌+分时反攻的位置买入，这个时候成功率反而更高。</p>
+<h2 id="_12">分时买入技巧</h2>
+<h3 id="_13">一、平开低走快速击穿均价线</h3>
+<p><img alt="5" src="../../../img/stock16.webp" /></p>
+<p>特征：</p>
+<ol>
+<li>集合竞价平开，随后击穿均价线，量能萎缩</li>
+<li>股价围绕均价线震荡，成交量依然萎缩</li>
+<li>上攻放量</li>
+</ol>
+<p><strong>买点</strong>：放量突破前高为第一买点</p>
+<h3 id="_14">二、高开低走击破均价线</h3>
+<p><img alt="5" src="../../../img/stock17.webp" /></p>
+<p>特征：</p>
+<ol>
+<li>集合竞价时股价即高于前一天收盘价格，高开幅度可大可小</li>
+<li>快速跌破黄色均价线，且成交量萎靡</li>
+<li>快速修复均价线</li>
+</ol>
+<p><strong>买点</strong>：修复均价线时快速买入</p>
+<h3 id="_15">三、平台调整型</h3>
+<p><img alt="5" src="../../../img/stock18.webp" /></p>
+<p>特征：</p>
+<ol>
+<li>股价在某一价位上进行较长时间的横向整理</li>
+<li>股价贴近均线，波动幅度较少</li>
+</ol>
+<p><strong>买点</strong>：在出先第一个“向上突破平台”时应该第一时间买入，第二个“向上突破平台”如果涨幅不大也可以买入</p>
+<h3 id="_16">四、高开高走回调不破均线形</h3>
+<p><img alt="5" src="../../../img/stock19.webp" /></p>
+<p>特征：</p>
+<ol>
+<li>集合竞价高于上一日的收盘价</li>
+<li>开盘后股价位于均价线上方，盘中出现回调不破黄色均线</li>
+</ol>
+<p><strong>买点</strong>：回调且不破黄色均线即为买点</p>
+<h2 id="v_1">分时V型反转选股公式</h2>
+<p>V型反转:=REF(C,4)&gt;REF(C,2)*1.05 AND C&gt;REF(C,2);</p>
+<p>DIF:=EMA(DCLOSE,10)-EMA(DCLOSE,72);</p>
+<p>DEA:=EMA(DIF,17);</p>
+<p>AAA:=(DIF-DEA)<em>2</em>60;</p>
+<p>牛股:=CROSS(AAA-REF(AAA,1),15);</p>
+<p>DIF1:=EMA(DCLOSE,12)-EMA(DCLOSE,26);</p>
+<p>DEA1:=EMA(DIF1,9);</p>
+<p>AAA1:=(DIF1-DEA1)<em>2</em>60;</p>
+<p>AAA上:=IF(AAA1&gt;REF(AAA1,1),AAA1,DRAWNULL);</p>
+<p>AAA下:=IF(AAA1&lt;REF(AAA1,1),AAA1,DRAWNULL);</p>
+<p>入线:=15;</p>
+<p>反弹:=AAA1-REF(AAA1,1);</p>
+<p>CROSS(反弹,入线);</p>
+<h2 id="_17">是什么影响了 中国股市 ？</h2>
+<p>中国股市从90年开始，眨眼间已经有28个年头了，人说三十而立，中国股市从一个小孩逐步成长，现在也快到而立之年了，中国经济最近二十年飞速发展，但对于中国的股民来讲，却大部分没有享受到快速发展带来的 <strong>股市</strong> 红利，</p>
+<p>反倒是大部分投资者在股市里吃了不少亏，七亏二平一赚，这是中国 A股 投资者的魔咒。最近我也一直在想这个问题，都说股市的是经济的晴雨表，最近几十年中国飞速发展，从原来的贫穷落后，到现在全民小康，话说股市应该也是长牛才对，但为什么中国股市会成现在这个样子，6124到1664的股灾，5178到2638的股灾，哀嚎一片，在很多科学技术上，中国能弯道超车，甚至是国际领先水平，但为什么中国股市却熊冠全球。</p>
+<p>很多人说是中国股市体制问题，其实我个人认为是中国股民投机性太强，大部分投资者都想在这个市场赚快钱，</p>
+<p>过度参与短线的交易，最终导致中国股市波动过大，资金之间互相盲目追风，中国股市参与者中80%都是 散户 投资者，虽然每个投资者资金量不大，但一亿多股民加起来的总量却是非常庞大，那么多资金参与短炒，最终影响上市公司股价。那到底短线炒作会有哪些不利的地方，为什么说是股市万恶之源？</p>
+<p>首先，过度短炒，股价很容易短期涨幅过大，从而形成资金的跟风效应，大量资金集中买入，股价短时间远远脱离其公司价值，前面上涨炒作的资金当然能赚到钱，但股市里面就是上涨你赚钱了，下跌过程接棒的人就会亏钱，</p>
+<p>大幅上涨脱离基本价值的后果就是会大幅下跌，这种情况在15年牛市中一些科技股，就是活生生的案例，现在大部分股价都只有原来高点的1/10。其次，我们大部分股民技术分析太薄弱，控制力不强，很多时候在赚钱心驱使下，</p>
+<p><strong>盲目买股，不懂得投资法则</strong>，有时候你会发现，大部分股民买股都是临时思考的决定，几十万，几百万就这样买了，但如果现实中让你投资一家公司几十万，几百万，估计你会全方面考量过后才会决定。再次，<strong>短线操作，让投资者赚钱的时候心态膨胀，亏钱的时候心态奔溃，大起大落之后，容易走向极端</strong>，这好比进赌场一样，你会发现进去赌场能全身而退的人非常非常少，这也是为什么那么多人忌讳 赌博 。</p>
+<p>最后总结起来，短线操作我并不否认在行情好的时候赚钱快，但行情不好的时候亏钱也快，别想着行情好你做，行情不好可以不做，能这样控制得住的人很少，况且目前很多人对行情好坏，其实都还不会分析，更别说控制自己了，所以我觉得大家真想赚钱，简单赚钱，快乐赚钱的话，还是以投资的角度去买股票，起码别急于短期就要获利，随着公司发展享受股价增值红利，是最为简单，稳健的投资手段。</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../../../chip_distribution/double_peaks_and_valleys/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 分布形态之双峰填谷" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              分布形态之双峰填谷
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../bond/convertible_bonds/01_base/" class="md-footer__link md-footer__link--next" aria-label="下一页: 可转债基础" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              可转债基础
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+    
+  </body>
+</html>
