@@ -52,6 +52,7 @@ nav:
       - 分布形态之双峰填谷: chip_distribution/double_peaks_and_valleys.md
     - 技术文章:
       - 分时图表买点技巧: stock/tech_article/time_chart_buy_skill.md
+      - 股票出现“蚂蚁上树”形态: stock/tech_article/ant_on_the_tree.md
   - 债券:
     - 可转债: 
       - 可转债基础: bond/convertible_bonds/01_base.md
