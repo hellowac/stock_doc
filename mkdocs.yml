@@ -53,6 +53,9 @@ nav:
     - 技术文章:
       - 分时图表买点技巧: stock/tech_article/time_chart_buy_skill.md
       - 股票出现“蚂蚁上树”形态: stock/tech_article/ant_on_the_tree.md
+      - 一个短线操作方法: stock/tech_article/short_op.md
+      - k线与成交量有什么关系: stock/tech_article/k_and_volume.md
+      - 5分钟，15分钟，30分钟，60分钟线分别说明什么？: stock/tech_article/5_15_30_60.md
   - 债券:
     - 可转债: 
       - 可转债基础: bond/convertible_bonds/01_base.md
