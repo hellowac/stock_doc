@@ -7,6 +7,11 @@ nav:
       - 关键的财务报表: business/account/statements.md
       - 分析财务报表: business/account/analyze_statements.md
       - 总结: business/account/summarize.md
+    - 财务管理:
+      - 财务和财务管理者的角色: business/manage/role.md
+      - 财务规划: business/manage/planning.md
+      - 运营资金的必要性: business/manage/operating_expenses.md
+      - 取得短期融资: business/manage/short_financing.md
   - 股票:
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
@@ -56,6 +61,8 @@ nav:
       - 一个短线操作方法: stock/tech_article/short_op.md
       - k线与成交量有什么关系: stock/tech_article/k_and_volume.md
       - 5分钟，15分钟，30分钟，60分钟线分别说明什么？: stock/tech_article/5_15_30_60.md
+      - 四连阳抓涨停: stock/tech_article/silianyang_catches_the_daily_limit.md
+      - 主力出货手法: stock/tech_article/main_shipping_method.md
   - 债券:
     - 可转债: 
       - 可转债基础: bond/convertible_bonds/01_base.md
