@@ -12,6 +12,8 @@ nav:
       - 财务规划: business/manage/planning.md
       - 运营资金的必要性: business/manage/operating_expenses.md
       - 取得短期融资: business/manage/short_financing.md
+      - 取得长期融资: business/manage/lang_financing.md
+      - 总结: business/manage/summarize.md
   - 股票:
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
@@ -63,6 +65,7 @@ nav:
       - 5分钟，15分钟，30分钟，60分钟线分别说明什么？: stock/tech_article/5_15_30_60.md
       - 四连阳抓涨停: stock/tech_article/silianyang_catches_the_daily_limit.md
       - 主力出货手法: stock/tech_article/main_shipping_method.md
+      - 图解短线3要素: stock/tech_article/graphical_short_line_3_elements.md
   - 债券:
     - 可转债: 
       - 可转债基础: bond/convertible_bonds/01_base.md
