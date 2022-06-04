@@ -101,6 +101,61 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/bond/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/buy/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/exchange/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/financing/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/foreword/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/function/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/indicators/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/investbond/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/investfund/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/investstock/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/business/stockmarket/summarize/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hellowac.github.io/stock_doc/chip_distribution/double_peaks_and_valleys/</loc>
          <lastmod>2022-06-04</lastmod>
          <changefreq>daily</changefreq>
