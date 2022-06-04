@@ -14,6 +14,18 @@ nav:
       - 取得短期融资: business/manage/short_financing.md
       - 取得长期融资: business/manage/lang_financing.md
       - 总结: business/manage/summarize.md
+    - 证券市场:
+      - 前言: business/stockmarket/foreword.md
+      - 证券市场的功能: business/stockmarket/function.md
+      - 证券交易所: business/stockmarket/exchange.md
+      - 股权融资: business/stockmarket/financing.md
+      - 发行债券融资: business/stockmarket/bond.md
+      - 投资者如何购买证券: business/stockmarket/buy.md
+      - 投资股票: business/stockmarket/investstock.md
+      - 投资债券: business/stockmarket/investbond.md
+      - 投资基金: business/stockmarket/investfund.md
+      - 了解股市指标: business/stockmarket/indicators.md
+      - 总结: business/stockmarket/summarize.md
   - 股票:
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
