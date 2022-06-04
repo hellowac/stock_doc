@@ -26,6 +26,16 @@ nav:
       - 投资基金: business/stockmarket/investfund.md
       - 了解股市指标: business/stockmarket/indicators.md
       - 总结: business/stockmarket/summarize.md
+    - 货币、金融机构和美联储:
+      - 前言: business/mechanism/foreword.md
+      - 货币为什么重要: business/mechanism/matters.md
+      - 控制货币供给: business/mechanism/moneysupply.md
+      - 银行史与美联储存在的必要性: business/mechanism/existence.md
+      - 美国的银行体系: business/mechanism/banksystem.md
+      - 最近的银行危机和政府的保护举措: business/mechanism/protections.md
+      - 利用技术提高银行效率: business/mechanism/bankefficiency.md
+      - 国际银行及其服务: business/mechanism/bankservices.md
+      - 总 结: business/mechanism/summarize.md
   - 股票:
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
