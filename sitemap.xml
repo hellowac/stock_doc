@@ -201,6 +201,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hellowac.github.io/stock_doc/candlestick/glossarya/</loc>
+         <lastmod>2022-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/candlestick/klineandvolume/</loc>
+         <lastmod>2022-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/candlestick/pricetarget/</loc>
+         <lastmod>2022-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hellowac.github.io/stock_doc/chip_distribution/double_peaks_and_valleys/</loc>
          <lastmod>2022-06-05</lastmod>
          <changefreq>daily</changefreq>

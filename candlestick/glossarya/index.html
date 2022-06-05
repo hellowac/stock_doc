@@ -1,0 +1,3323 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hellowac.github.io/stock_doc/candlestick/glossarya/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+    
+    
+      
+        <title>蜡烛图技术术语及示意图 - 证券学习文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="证券学习文档" class="md-header__button md-logo" aria-label="证券学习文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            证券学习文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              蜡烛图技术术语及示意图
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="证券学习文档" class="md-nav__button md-logo" aria-label="证券学习文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    证券学习文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          认识商业
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="认识商业" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          认识商业
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_1">
+          理解会计和财务指标
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="理解会计和财务指标" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          理解会计和财务指标
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/base/" class="md-nav__link">
+        会计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/statements/" class="md-nav__link">
+        关键的财务报表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/analyze_statements/" class="md-nav__link">
+        分析财务报表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_2">
+          财务管理
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="财务管理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          财务管理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/role/" class="md-nav__link">
+        财务和财务管理者的角色
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/planning/" class="md-nav__link">
+        财务规划
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/operating_expenses/" class="md-nav__link">
+        运营资金的必要性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/short_financing/" class="md-nav__link">
+        取得短期融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/lang_financing/" class="md-nav__link">
+        取得长期融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3">
+          证券市场
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="证券市场" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          证券市场
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/foreword/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/function/" class="md-nav__link">
+        证券市场的功能
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/exchange/" class="md-nav__link">
+        证券交易所
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/financing/" class="md-nav__link">
+        股权融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/bond/" class="md-nav__link">
+        发行债券融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/buy/" class="md-nav__link">
+        投资者如何购买证券
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/investstock/" class="md-nav__link">
+        投资股票
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/investbond/" class="md-nav__link">
+        投资债券
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/investfund/" class="md-nav__link">
+        投资基金
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/indicators/" class="md-nav__link">
+        了解股市指标
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_4">
+          货币、金融机构和美联储
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="货币、金融机构和美联储" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          货币、金融机构和美联储
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/foreword/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/matters/" class="md-nav__link">
+        货币为什么重要
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/moneysupply/" class="md-nav__link">
+        控制货币供给
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/existence/" class="md-nav__link">
+        银行史与美联储存在的必要性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/banksystem/" class="md-nav__link">
+        美国的银行体系
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/protections/" class="md-nav__link">
+        最近的银行危机和政府的保护举措
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/bankefficiency/" class="md-nav__link">
+        利用技术提高银行效率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/bankservices/" class="md-nav__link">
+        国际银行及其服务
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/summarize/" class="md-nav__link">
+        总 结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          日本蜡烛图技术
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="日本蜡烛图技术" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          日本蜡烛图技术
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../klineandvolume/" class="md-nav__link">
+        15章:蜡烛图与交易量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pricetarget/" class="md-nav__link">
+        16章:测算价格目标
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          蜡烛图技术术语及示意图
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        蜡烛图技术术语及示意图
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abandoned-baby" class="md-nav__link">
+    弃婴形态（Abandoned baby）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advance-block" class="md-nav__link">
+    前方受阻形态（Advance block）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bearish-belt-hold" class="md-nav__link">
+    看跌捉腰带线（Bearish belt-hold）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bearish-engulfing-pattern" class="md-nav__link">
+    看跌吞没形态（Bearish engulfing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#belt-hold-line" class="md-nav__link">
+    捉腰带线（Belt-hold line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-range" class="md-nav__link">
+    箱体区间（Box range）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bullish-belt-hold" class="md-nav__link">
+    看涨捉腰带线（Bullish belt-hold）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bullish-engulfing-pattern" class="md-nav__link">
+    看涨吞没形态（Bullish engulfing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#candlestick-lines-and-charts" class="md-nav__link">
+    蜡烛线与蜡烛图（Candlestick lines and charts）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#counterattack-lines" class="md-nav__link">
+    反击（蜡烛）线（Counterattack lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dark-cloud-cover" class="md-nav__link">
+    乌云盖顶（Dark-cloud cover）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dead-cross" class="md-nav__link">
+    死亡交叉（Dead cross）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doji" class="md-nav__link">
+    十字（蜡烛）线（Doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doji-star" class="md-nav__link">
+    十字星（蜡烛）线（Doji star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downside-gaptasuki" class="md-nav__link">
+    向下跳空并列黑白（蜡烛）线形态（Downside gaptasuki）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dragonfly-doji" class="md-nav__link">
+    蜻蜓十字线（Dragonfly doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dumpling-top" class="md-nav__link">
+    圆形顶部形态（Dumpling top）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engulfing-pattern" class="md-nav__link">
+    吞没形态（Engulfing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evening-doji-star" class="md-nav__link">
+    十字黄昏星形态（Evening doji star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evening-star" class="md-nav__link">
+    黄昏星形态（Evening star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#falling-three-methods" class="md-nav__link">
+    下降三法形态（Falling three methods）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#falling-window" class="md-nav__link">
+    向下的窗口（Falling window）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frypan-bottom" class="md-nav__link">
+    平底锅底部形态（Frypan bottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gapping-plays" class="md-nav__link">
+    跳空突破形态（Gapping plays）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golden-cross" class="md-nav__link">
+    黄金交叉（Golden cross）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gravestone-doji" class="md-nav__link">
+    墓碑十字线（Gravestone doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hammer" class="md-nav__link">
+    锤子（蜡烛）线（Hammer）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hanging-man" class="md-nav__link">
+    上吊（蜡烛）线（Hanging man）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#harami" class="md-nav__link">
+    孕线形态（Harami）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#harami-cross" class="md-nav__link">
+    十字孕线形态（Harami cross）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-price-gapping-play" class="md-nav__link">
+    高价位跳空突破形态（High-price gapping play）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-wave" class="md-nav__link">
+    大风大浪线（High wave）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-neck-line" class="md-nav__link">
+    切入线形态（In-neck line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverted-hammer" class="md-nav__link">
+    倒锤子（蜡烛）线（Inverted hammer）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverted-three-buddha-pattern" class="md-nav__link">
+    倒三尊形态（Inverted three Buddha pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-legged-doji" class="md-nav__link">
+    长腿十字线（Long-legged doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-price-gapping-play" class="md-nav__link">
+    低价位跳空突破形态（Low-price gapping play）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lower-shadow" class="md-nav__link">
+    下影线（Lower shadow）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morning-attack" class="md-nav__link">
+    拂晓袭击（Morning attack）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morning-doji-star" class="md-nav__link">
+    十字启明星形态（Morning doji star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morning-star" class="md-nav__link">
+    启明星形态（Morning star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#night-attack" class="md-nav__link">
+    夜袭（Night attack）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#northern-doji" class="md-nav__link">
+    北方十字线（Northern doji）参见“十字线”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-neck-line" class="md-nav__link">
+    待入线形态（On-neck line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#petrifying-pattern" class="md-nav__link">
+    呆滞形态（Petrifying pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piercing-pattern" class="md-nav__link">
+    刺透形态（Piercing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rain-drop" class="md-nav__link">
+    雨滴（Rain drop）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-body" class="md-nav__link">
+    实体（Real body）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rickshaw-man" class="md-nav__link">
+    黄包车夫线（Rickshaw man）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rising-three-methods" class="md-nav__link">
+    上升三法形态（Rising three methods）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rising-window" class="md-nav__link">
+    向上的窗口（Rising window）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#separating-lines" class="md-nav__link">
+    分手线（Separating lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadows" class="md-nav__link">
+    影线（Shadows）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shaven-bottom" class="md-nav__link">
+    光脚（Shaven bottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shaven-head" class="md-nav__link">
+    光头（Shaven head）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shooting-star" class="md-nav__link">
+    流星（蜡烛）线（Shooting star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#side-by-side-white-lines" class="md-nav__link">
+    并列阳线（Side-by-side white lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spinning-tops" class="md-nav__link">
+    纺锤（蜡烛）线（Spinning tops）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#star" class="md-nav__link">
+    星（蜡烛）线（Star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasuki-gaps" class="md-nav__link">
+    跳空并列阴阳线形态（Tasuki gaps）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-buddha-patterns" class="md-nav__link">
+    三尊形态（Three Buddha patterns）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-crows" class="md-nav__link">
+    三只乌鸦（Three crows）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-methods" class="md-nav__link">
+    三法形态（Three methods）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-mountain-top" class="md-nav__link">
+    三山顶部形态（Three mountain top）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-river-bottom" class="md-nav__link">
+    三川底部形态（Three river bottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-white-or-three-advancing-soldiers" class="md-nav__link">
+    白色三兵形态或者白色三兵挺进形态（Three white or three advancing soldiers）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thrusting-line" class="md-nav__link">
+    插入线形态（Thrusting line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#towers" class="md-nav__link">
+    塔形形态（Towers）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tri-star" class="md-nav__link">
+    三星形态（Tri-star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tweezers-top-andbottom" class="md-nav__link">
+    平头顶部形态和平头底部形态（Tweezers top andbottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#umbrella-lines" class="md-nav__link">
+    伞形线（Umbrella lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upper-shadow" class="md-nav__link">
+    上影线（Upper shadow）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upside-gap-tasuki" class="md-nav__link">
+    向上跳空并列阴阳线形态（Upside gap tasuki）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upside-gap-two-crows" class="md-nav__link">
+    向上跳空两只乌鸦（Upside gap two crows）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    窗口（Window）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yin-and-yang" class="md-nav__link">
+    阴线和阳线（Yin and yang）
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          股票
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="股票" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          股票
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          股票投资基础知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="股票投资基础知识" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          股票投资基础知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/what_stock/" class="md-nav__link">
+        什么是炒股
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/must_know_concept/" class="md-nav__link">
+        必须知道的概念
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/must_know_trading_rule/" class="md-nav__link">
+        必懂的交易规则
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_pe_ratio/" class="md-nav__link">
+        估值指标市盈率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_pb_ratio/" class="md-nav__link">
+        估值指标市净率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_ps_ratio/" class="md-nav__link">
+        估值指标市销率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_pcf_ratio/" class="md-nav__link">
+        估值指标市现率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_peg_ratio/" class="md-nav__link">
+        估值指标PEG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_k_graph/" class="md-nav__link">
+        了解k线图
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_20_k_graph/" class="md-nav__link">
+        必须掌握的20种K线形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/up_k_graph/" class="md-nav__link">
+        经典的看涨K线组合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/down_k_graph/" class="md-nav__link">
+        经典的看跌K线组合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_moving_average/" class="md-nav__link">
+        一文了解均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/common_used_moving_average/" class="md-nav__link">
+        均线使用中的常用知识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/moving_average_meaning/" class="md-nav__link">
+        均线排列的含义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/response_mainforce_cheat/" class="md-nav__link">
+        应对主力K线骗线的几种方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_mvoing_average_choice/" class="md-nav__link">
+        如何利用均线判断股票的回调力度强弱
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_buy_by_moving_average/" class="md-nav__link">
+        常见的均线“买入”信号有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_sale_by_moving_average/" class="md-nav__link">
+        常见的均线“卖出”信号有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_five_moving_average_usage/" class="md-nav__link">
+        5日均线的常见用法有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_bolling_bands/" class="md-nav__link">
+        什么是布林线？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/boll_down_usage/" class="md-nav__link">
+        布林线下轨的常见用法有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/boll_up_and_down_opening/" class="md-nav__link">
+        布林线的上、下开口形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/boll_flare_pattern/" class="md-nav__link">
+        布林线的喇叭口形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/what_is_macd/" class="md-nav__link">
+        什么是MACD？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/macd_top_divergence/" class="md-nav__link">
+        MACD形态之顶背离
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/macd_down_divergence/" class="md-nav__link">
+        MACD形态之底背离
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          均线策略
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="均线策略" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          均线策略
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/01_base/" class="md-nav__link">
+        为什么说均线是神奇的线?（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/02_base/" class="md-nav__link">
+        为什么说均线是神奇的线？（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/03_base/" class="md-nav__link">
+        均线不同排列形态意味着什么？（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/04_base/" class="md-nav__link">
+        均线不同排列形态意味着什么？（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/05_base/" class="md-nav__link">
+        格兰威尔八大买卖法则（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/06_base/" class="md-nav__link">
+        格兰威尔八大买卖法则（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/07_base/" class="md-nav__link">
+        双均线战法（上）-单均线VS双均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/08_base/" class="md-nav__link">
+        双均线战法（下）-双均线战法应用技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/09_base/" class="md-nav__link">
+        三均线战法（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/10_base/" class="md-nav__link">
+        三均线战法（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/11_base/" class="md-nav__link">
+        一通百通，均线战法很轻松
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          筹码分布
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="筹码分布" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          筹码分布
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chip_distribution/double_peaks_and_valleys/" class="md-nav__link">
+        分布形态之双峰填谷
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          技术文章
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="技术文章" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          技术文章
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/time_chart_buy_skill/" class="md-nav__link">
+        分时图表买点技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/ant_on_the_tree/" class="md-nav__link">
+        股票出现“蚂蚁上树”形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/short_op/" class="md-nav__link">
+        一个短线操作方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/k_and_volume/" class="md-nav__link">
+        k线与成交量有什么关系
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/5_15_30_60/" class="md-nav__link">
+        5分钟，15分钟，30分钟，60分钟线分别说明什么？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/silianyang_catches_the_daily_limit/" class="md-nav__link">
+        四连阳抓涨停
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/main_shipping_method/" class="md-nav__link">
+        主力出货手法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/graphical_short_line_3_elements/" class="md-nav__link">
+        图解短线3要素
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/time_chart_decide_the_buying_and_selling/" class="md-nav__link">
+        让分时图决定买卖
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          债券
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="债券" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          债券
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          可转债
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="可转债" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          可转债
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/01_base/" class="md-nav__link">
+        可转债基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/02_subscription/" class="md-nav__link">
+        中签和收益
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/03_how_to_profit/" class="md-nav__link">
+        获利方式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/04_moment_sense/" class="md-nav__link">
+        相关常识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/05_cal_permium_rate/" class="md-nav__link">
+        计算溢价率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/06_cal_permium_rate/" class="md-nav__link">
+        计算溢价率2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/07_debt/" class="md-nav__link">
+        债性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/08_risk/" class="md-nav__link">
+        风险
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          关于
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="关于" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          关于
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        制作方式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        主题
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abandoned-baby" class="md-nav__link">
+    弃婴形态（Abandoned baby）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advance-block" class="md-nav__link">
+    前方受阻形态（Advance block）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bearish-belt-hold" class="md-nav__link">
+    看跌捉腰带线（Bearish belt-hold）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bearish-engulfing-pattern" class="md-nav__link">
+    看跌吞没形态（Bearish engulfing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#belt-hold-line" class="md-nav__link">
+    捉腰带线（Belt-hold line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-range" class="md-nav__link">
+    箱体区间（Box range）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bullish-belt-hold" class="md-nav__link">
+    看涨捉腰带线（Bullish belt-hold）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bullish-engulfing-pattern" class="md-nav__link">
+    看涨吞没形态（Bullish engulfing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#candlestick-lines-and-charts" class="md-nav__link">
+    蜡烛线与蜡烛图（Candlestick lines and charts）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#counterattack-lines" class="md-nav__link">
+    反击（蜡烛）线（Counterattack lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dark-cloud-cover" class="md-nav__link">
+    乌云盖顶（Dark-cloud cover）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dead-cross" class="md-nav__link">
+    死亡交叉（Dead cross）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doji" class="md-nav__link">
+    十字（蜡烛）线（Doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doji-star" class="md-nav__link">
+    十字星（蜡烛）线（Doji star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downside-gaptasuki" class="md-nav__link">
+    向下跳空并列黑白（蜡烛）线形态（Downside gaptasuki）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dragonfly-doji" class="md-nav__link">
+    蜻蜓十字线（Dragonfly doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dumpling-top" class="md-nav__link">
+    圆形顶部形态（Dumpling top）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engulfing-pattern" class="md-nav__link">
+    吞没形态（Engulfing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evening-doji-star" class="md-nav__link">
+    十字黄昏星形态（Evening doji star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evening-star" class="md-nav__link">
+    黄昏星形态（Evening star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#falling-three-methods" class="md-nav__link">
+    下降三法形态（Falling three methods）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#falling-window" class="md-nav__link">
+    向下的窗口（Falling window）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frypan-bottom" class="md-nav__link">
+    平底锅底部形态（Frypan bottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gapping-plays" class="md-nav__link">
+    跳空突破形态（Gapping plays）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golden-cross" class="md-nav__link">
+    黄金交叉（Golden cross）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gravestone-doji" class="md-nav__link">
+    墓碑十字线（Gravestone doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hammer" class="md-nav__link">
+    锤子（蜡烛）线（Hammer）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hanging-man" class="md-nav__link">
+    上吊（蜡烛）线（Hanging man）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#harami" class="md-nav__link">
+    孕线形态（Harami）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#harami-cross" class="md-nav__link">
+    十字孕线形态（Harami cross）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-price-gapping-play" class="md-nav__link">
+    高价位跳空突破形态（High-price gapping play）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-wave" class="md-nav__link">
+    大风大浪线（High wave）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-neck-line" class="md-nav__link">
+    切入线形态（In-neck line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverted-hammer" class="md-nav__link">
+    倒锤子（蜡烛）线（Inverted hammer）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverted-three-buddha-pattern" class="md-nav__link">
+    倒三尊形态（Inverted three Buddha pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-legged-doji" class="md-nav__link">
+    长腿十字线（Long-legged doji）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-price-gapping-play" class="md-nav__link">
+    低价位跳空突破形态（Low-price gapping play）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lower-shadow" class="md-nav__link">
+    下影线（Lower shadow）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morning-attack" class="md-nav__link">
+    拂晓袭击（Morning attack）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morning-doji-star" class="md-nav__link">
+    十字启明星形态（Morning doji star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morning-star" class="md-nav__link">
+    启明星形态（Morning star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#night-attack" class="md-nav__link">
+    夜袭（Night attack）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#northern-doji" class="md-nav__link">
+    北方十字线（Northern doji）参见“十字线”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-neck-line" class="md-nav__link">
+    待入线形态（On-neck line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#petrifying-pattern" class="md-nav__link">
+    呆滞形态（Petrifying pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piercing-pattern" class="md-nav__link">
+    刺透形态（Piercing pattern）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rain-drop" class="md-nav__link">
+    雨滴（Rain drop）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-body" class="md-nav__link">
+    实体（Real body）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rickshaw-man" class="md-nav__link">
+    黄包车夫线（Rickshaw man）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rising-three-methods" class="md-nav__link">
+    上升三法形态（Rising three methods）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rising-window" class="md-nav__link">
+    向上的窗口（Rising window）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#separating-lines" class="md-nav__link">
+    分手线（Separating lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadows" class="md-nav__link">
+    影线（Shadows）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shaven-bottom" class="md-nav__link">
+    光脚（Shaven bottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shaven-head" class="md-nav__link">
+    光头（Shaven head）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shooting-star" class="md-nav__link">
+    流星（蜡烛）线（Shooting star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#side-by-side-white-lines" class="md-nav__link">
+    并列阳线（Side-by-side white lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spinning-tops" class="md-nav__link">
+    纺锤（蜡烛）线（Spinning tops）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#star" class="md-nav__link">
+    星（蜡烛）线（Star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasuki-gaps" class="md-nav__link">
+    跳空并列阴阳线形态（Tasuki gaps）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-buddha-patterns" class="md-nav__link">
+    三尊形态（Three Buddha patterns）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-crows" class="md-nav__link">
+    三只乌鸦（Three crows）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-methods" class="md-nav__link">
+    三法形态（Three methods）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-mountain-top" class="md-nav__link">
+    三山顶部形态（Three mountain top）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-river-bottom" class="md-nav__link">
+    三川底部形态（Three river bottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-white-or-three-advancing-soldiers" class="md-nav__link">
+    白色三兵形态或者白色三兵挺进形态（Three white or three advancing soldiers）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thrusting-line" class="md-nav__link">
+    插入线形态（Thrusting line）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#towers" class="md-nav__link">
+    塔形形态（Towers）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tri-star" class="md-nav__link">
+    三星形态（Tri-star）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tweezers-top-andbottom" class="md-nav__link">
+    平头顶部形态和平头底部形态（Tweezers top andbottom）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#umbrella-lines" class="md-nav__link">
+    伞形线（Umbrella lines）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upper-shadow" class="md-nav__link">
+    上影线（Upper shadow）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upside-gap-tasuki" class="md-nav__link">
+    向上跳空并列阴阳线形态（Upside gap tasuki）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upside-gap-two-crows" class="md-nav__link">
+    向上跳空两只乌鸦（Upside gap two crows）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    窗口（Window）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yin-and-yang" class="md-nav__link">
+    阴线和阳线（Yin and yang）
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="_1">蜡烛图技术术语及示意图小词典</h1>
+<h2 id="abandoned-baby">弃婴形态（Abandoned baby）</h2>
+<p>这是一种非常罕见的顶部或底部反转信号。它是由三根蜡烛线组成的，中间一根为十字星线，并且在这根十字星线与其前、后两根蜡烛线之间，发生了价格跳空（包括所有蜡烛线的影线在内）。本形态与西方的岛形<strong>反转形态</strong>相当，只是这里要求岛部是一根十字线。</p>
+<p><img alt="1" src="../../img/kline01.png" /></p>
+<h2 id="advance-block">前方受阻形态（Advance block）</h2>
+<p>这是白色三兵形态的一种变体，其中后两兵（即后两根白色蜡烛线）显示出市场向上的驱动力正在减弱。从具体表现形式来看，其疲软性质既可能反映在长长的上影线上，也可能反映在逐步缩小的实体上。本形态标志着市场买进力量的衰退，或者卖出压力的增长。</p>
+<p><img alt="1" src="../../img/kline02.png" /></p>
+<h2 id="bearish-belt-hold">看跌捉腰带线（Bearish belt-hold）</h2>
+<p>参见“捉腰带线”</p>
+<h2 id="bearish-engulfing-pattern">看跌吞没形态（Bearish engulfing pattern）</h2>
+<p>参见“吞没形态”</p>
+<h2 id="belt-hold-line">捉腰带线（Belt-hold line）</h2>
+<p>既有看涨的捉腰带线，也有看跌的捉腰带线。看涨捉腰带线是一根长长的白色蜡烛线，它的开市价位于它的最低点。这种形态也称作开市光（脚）大阳线。当它处于低价区时，构成看涨信号。看跌捉腰带线是一根长长的黑色蜡烛线，它的开市价位于它的最高点。本形态也称作开市光（头）大阴线。当它处于高价位时，构成看跌信号。</p>
+<p><img alt="1" src="../../img/kline03.png" /></p>
+<h2 id="box-range">箱体区间（Box range）</h2>
+<p>市场处在横向交易区间中。日本术语</p>
+<h2 id="bullish-belt-hold">看涨捉腰带线（Bullish belt-hold）</h2>
+<p>参见条目“捉腰带线”</p>
+<p><img alt="1" src="../../img/kline04.png" /></p>
+<h2 id="bullish-engulfing-pattern">看涨吞没形态（Bullish engulfing pattern）</h2>
+<p>参见“吞没形态”。</p>
+<h2 id="candlestick-lines-and-charts">蜡烛线与蜡烛图（Candlestick lines and charts）</h2>
+<p>在传统的日本市场图表上，其中的图线看起来像一根根蜡烛，由此得到了蜡烛线和蜡烛图的名称。蜡烛线是由实体部分和影线部分组成的。参见条目“实体”和“影线”。</p>
+<h2 id="counterattack-lines">反击（蜡烛）线（Counterattack lines）</h2>
+<p>也称“约会线”。在下降趋势（或上升趋势）中，在一根黑色蜡烛线（或白色蜡烛线）之后，市场在开市时急剧地向下跳空（或向上跳空），在收市时市场却与前一天的收市价处于同一水平，这就形成了一个反击线形态。本形态的出现，反映出牛、熊双方处于胶着状态，一时难分雌雄，说明形态出现之前的趋势力量正在衰减</p>
+<p><img alt="1" src="../../img/kline05.png" /></p>
+<h2 id="dark-cloud-cover">乌云盖顶（Dark-cloud cover）</h2>
+<p>这是一个看跌的反转信号。其形成过程是，在上升趋势中，先出现一根长长的白色蜡烛线，跟着是一根黑色蜡烛线。这根黑色蜡烛线的开市价高于前一个白色蜡烛线的最高价，它的收市价显著地向下穿入白色蜡烛线的实体内——最好达到其中线之下。与乌云盖顶对应的看涨的形态称为<strong>刺透形态</strong>（Piercing Pattern）。</p>
+<p><img alt="1" src="../../img/kline06.png" /></p>
+<h2 id="dead-cross">死亡交叉（Dead cross）</h2>
+<p>当短期移动平均线向下穿越长期移动平均线时，构成一个看跌信号，即死亡交叉信号。与死亡交叉对应的看涨信号称为黄金交叉（Golden cross）。</p>
+<h2 id="doji">十字（蜡烛）线（Doji）</h2>
+<p>在某根蜡烛线上，开市价和收市价处于相同的水平（或几乎处于同一个水平），则构成了一根十字线。十字线具有各种形状（比如墓碑十字线、蜻蜓十字线或者长腿十字线），这取决于开市价和收市价相对于本时段整个价格范围的位置。十字线，居于最重要的单蜡烛线形态之列。同时，它也是一些重要的蜡烛图形态的一个组成部分。<strong>北方十字线</strong>（Northern doji）是出现在上涨行情中的十字线。<strong>南方十字线</strong>（Southern doji）是出现在下降行情中的十字线。</p>
+<p><img alt="1" src="../../img/kline07.png" /></p>
+<h2 id="doji-star">十字星（蜡烛）线（Doji star）</h2>
+<p>当一根十字线从前一根长长的白色蜡烛线向上跳空，或者从前一根长长的黑色蜡烛线向下跳空时，就构成了一根十字星线</p>
+<p><img alt="1" src="../../img/kline08.png" /></p>
+<h2 id="downside-gaptasuki">向下跳空并列黑白（蜡烛）线形态（Downside gaptasuki）</h2>
+<p>也称“向下跳空并列阴阳线形态”，参见“跳空并列阴阳线形态”</p>
+<h2 id="dragonfly-doji">蜻蜓十字线（Dragonfly doji）</h2>
+<p>带有长长的下影线的十字线，其中开市价和收市价都处在本时段的最高点。参见十字线条目的示意图。与之对应的版本称为<strong>墓碑十字线</strong>（Gravestone doji）</p>
+<h2 id="dumpling-top">圆形顶部形态（Dumpling top）</h2>
+<p>类似于西方的圆形顶部形态。在本形态中，必须出现一个向下跳空的窗口，以验证该顶部信号。与之对应的看涨的形态称为<strong>平底锅底部形态</strong>（Frypan bottom）。</p>
+<p><img alt="1" src="../../img/kline09.png" /></p>
+<h2 id="engulfing-pattern">吞没形态（Engulfing pattern）</h2>
+<p>也称“抱线形态”。既有看涨吞没形态，也有看跌吞没形态。看涨吞没形态发生在下降趋势中，是由一根黑色的小实体与一根巨大的白色实体组成的，其中白色实体覆盖了黑色实体。看跌吞没形态（一种重要的顶部反转信号）发生在上升趋势中，此时卖出压力淹没了买进压力，反映在蜡烛图上，就是一根长长的黑色实体吞没了一根白色小实体
+。</p>
+<p><img alt="1" src="../../img/kline10.png" /></p>
+<h2 id="evening-doji-star">十字黄昏星形态（Evening doji star）</h2>
+<p>其轮廓与黄昏星形态相同，但是中间的那根蜡烛线（即其中的星线部分）是一根十字星线，而不是一个小实体。参见“黄昏星形态”</p>
+<h2 id="evening-star">黄昏星形态（Evening star）</h2>
+<p>这是一类顶部反转形态，由三根蜡烛线组成。第一根是一个长长的白色实体；第二根是一个小实体（既可以为白色，也可以为黑色），并且它向上跳空，形成了一根星线；第三根是一个黑色的蜡烛线，其收市价明显地向下穿入第一根白色实体的内部。如果第二根蜡烛线为十字线，而不是纺锤线，则构成了十字黄昏星形态。与之对应的相反形态为启明星形态（Morning star）</p>
+<p><img alt="1" src="../../img/kline11.png" /></p>
+<h2 id="falling-three-methods">下降三法形态（Falling three methods）</h2>
+<p>参见“三法形态”</p>
+<h2 id="falling-window">向下的窗口（Falling window）</h2>
+<p>参见“窗口”</p>
+<h2 id="frypan-bottom">平底锅底部形态（Frypan bottom）</h2>
+<p>本形态与西方的圆形底部形态相当。但是在本形态中，必须出现一个向上跳空的窗口。与之相对应的相反形态为<strong>圆形顶部形态</strong>（Dumpling top）</p>
+<p><img alt="1" src="../../img/kline12.png" /></p>
+<h2 id="gapping-plays">跳空突破形态（Gapping plays）</h2>
+<p>共有两类跳空突破形态：</p>
+<ol>
+<li><strong>高价位跳空突破形态</strong>（High-price gapping play）——市场在经过一轮急剧的上涨之后，通过一系列位于最近新高水平附近的小实体进行调整、巩固。如果价格从这个整固区域向上跳空，则构成一个高价位跳空突破形态。
+2.</li>
+<li><strong>低价位跳空突破形态</strong>（Low-price gapping play）——市场在经历一轮急剧的下跌之后，通过一系列位于最近新低水平附近的小实体进行调整、巩固。如果价格从这个整固区域向下跳空，则构成一个卖出信号。</li>
+</ol>
+<p><img alt="1" src="../../img/kline13.png" /></p>
+<h2 id="golden-cross">黄金交叉（Golden cross）</h2>
+<p>当短期移动平均线向上穿越长期移动平均线时，称为黄金交叉，构成一个看涨信号。与之对应的相反信号称为死亡交叉（Dead cross）。</p>
+<h2 id="gravestone-doji">墓碑十字线（Gravestone doji）</h2>
+<p>也称为“灵位十字线”。这是一种特别的十字线，其开市价和收市价均处于当日的最低点。本形态属于顶部反转信号。参见“十字线”的示意图。与之对应的图形称为<strong>蜻蜓十字线</strong>（Dragonfly doji）。</p>
+<h2 id="hammer">锤子（蜡烛）线（Hammer）</h2>
+<p>是一种重要的底部蜡烛线。锤子线与上吊线的形状是一致的，一般称为<strong>伞形线</strong>（Umbrella lines）。它具有一个小实体（既可以是白色的，也可以是黑色的），并且该实体位于当日价格范围的顶端；它还有一条极长的下影线，一条很短的上影线，或没有上影线。如果这种蜡烛线出现在下降趋势中，就成了一根看涨的锤子线。作为一根经典的锤子线，其下影线的长度应当至少达到其实体高度的两倍</p>
+<p><img alt="1" src="../../img/kline14.png" /></p>
+<h2 id="hanging-man">上吊（蜡烛）线（Hanging man）</h2>
+<p>是一种重要的顶部反转信号。上吊线与锤子线是同一个类型的蜡烛线。它具有一个小实体（既可以是白色的，也可以是黑色的），并且该实体位于当日价格范围的顶端；它还具有一条极长的下影线，一条很短的上影线，或没有上影线。但是，如果这种蜡烛线出现在上升趋势中，就成为一根看跌的上吊线。它的出现意味着市场已经变得脆弱，但是我们还需要下一时段进一步的验证信号（即之后时段的开市价低于上吊线的实体，最好其收市价低于上吊线的实体），才能得出一个顶部信号。从原则上说，上吊线的下影线的长度应当为其实体高度的2—3倍</p>
+<h2 id="harami">孕线形态（Harami）</h2>
+<p>这是一种双蜡烛线形态，其中前一根是一个不寻常的巨大实体，后一根是一个小实体，并且小实体居于大实体内部。<strong>孕线形态暗示市场的当前趋势已经结束，牛方和熊方目前处于休战状态</strong>。其中小实体（即第二根蜡烛线）的颜色，既可以是白色的，也可以是黑色的。最常见的情况是，第二个实体的颜色同第一个实体的颜色相反</p>
+<p><img alt="1" src="../../img/kline15.png" /></p>
+<h2 id="harami-cross">十字孕线形态（Harami cross）</h2>
+<p>在孕线形态中，如果第二根蜡烛线是一个十字线，而不是一个小实体，则构成了一个十字孕线形态。<strong>这是一类重要的顶部（或底部）反转信号，特别是当该十字线跟随在一根长长的白色（或黑色）实体之后的情况</strong>下。本形态也称为“呆滞形态（Petrifying pattern）”</p>
+<h2 id="high-price-gapping-play">高价位跳空突破形态（High-price gapping play）</h2>
+<p>参见条目“跳空突破形态”</p>
+<h2 id="high-wave">大风大浪线（High wave）</h2>
+<p>这类蜡烛线具有非常长的上影线或下影线，以及一个短短的实体。这类蜡烛线的出现表明，市场已经丧失了在其出现之前原有的方向性基调。如果是一根十字线，而不是小实体，则成了长腿十字线</p>
+<p><img alt="1" src="../../img/kline16.png" /></p>
+<h2 id="in-neck-line">切入线形态（In-neck line）</h2>
+<p>在下降趋势中，在一根黑色蜡烛线之后，出现了一根白色的小蜡烛线，其收市价略微高于黑色蜡烛线的收市价，这样就形成了一个切入线形态。之后，当市场向下跌破这个白色蜡烛线的低点后，下降趋势就恢复了。请比较本形态与待入线形态、插入线形态以及刺透形态的异同</p>
+<p><img alt="1" src="../../img/kline17.png" /></p>
+<h2 id="inverted-hammer">倒锤子（蜡烛）线（Inverted hammer）</h2>
+<p>这类蜡烛线出现在一段下降趋势之后，具有一根长长的上影线和一个小实体，并且它的小实体位于当日价格区间的下端。它应当没有下影线，或者只有十分短小的下影线。它的形状与看跌的流星线相同，但是如果它发生在下降趋势中，并且得到了后一日的验证（即后一日开市价高于倒锤子线的实体，特别是其收市价高于倒锤子线的实体），则构成了一个看涨的底部反转信号。</p>
+<p><img alt="1" src="../../img/kline18.png" /></p>
+<h2 id="inverted-three-buddha-pattern">倒三尊形态（Inverted three Buddha pattern）</h2>
+<p>参见“三尊形态”</p>
+<h2 id="long-legged-doji">长腿十字线（Long-legged doji）</h2>
+<p>这是一根带有很长影线的十字线。如果长腿十字线的开市价和收市价位于当日价格范围的中点，就构成了一根黄包车夫线（Rickshaw man）。参见“十字线”的示意图</p>
+<h2 id="low-price-gapping-play">低价位跳空突破形态（Low-price gapping play）</h2>
+<p>参见“跳空突破形态”</p>
+<h2 id="lower-shadow">下影线（Lower shadow）</h2>
+<p>参见“影线”。</p>
+<h2 id="morning-attack">拂晓袭击（Morning attack）</h2>
+<p>当市场开市时，有人挂出巨额的买入指令或卖出指令，企图明显移动市场的价位，日本人将这一现象称作拂晓袭击</p>
+<h2 id="morning-doji-star">十字启明星形态（Morning doji star）</h2>
+<p>其形状与启明星形态一致，除了其中间的蜡烛线是一个十字线，而不是一个小实体之外。参见“启明星形态”。</p>
+<h2 id="morning-star">启明星形态（Morning star）</h2>
+<p>这是一种底部反转形态，由三根蜡烛线组成。第一根，是一个长长的黑色实体；第二根，是一个小实体（既可以是白色的，也可以是黑色的），并且它向下跳空，成为一根星线；第三根，是一根白色蜡烛线，其收市价显著地向上穿入第一根黑色实体的内部。与之对应的相反形态称为<strong>黄昏星形态</strong>（Evening star）。如果中间的蜡烛线（星线部分）是一根十字线，而不是纺锤线，那么本形态就成为十字启明星形态</p>
+<p><img alt="1" src="../../img/kline19.png" /></p>
+<h2 id="night-attack">夜袭（Night attack）</h2>
+<p>当市场收市时，有人挂出巨额的交易指令，企图明显地影响市场价格，日本人将这一现象称作夜袭。</p>
+<h2 id="northern-doji">北方十字线（Northern doji）参见“十字线”</h2>
+<p><img alt="1" src="../../img/kline20.png" /></p>
+<h2 id="on-neck-line">待入线形态（On-neck line）</h2>
+<p>在下降趋势中，首先出现一根黑色蜡烛线，后面跟着一根小的白色蜡烛线，并且其收市价接近黑色蜡烛线的最低点，这就构成了一个待入线形态。它属于看跌的持续形态。当市场向下跌破该白色蜡烛线的最低点之后，市场将继续向下运动。请比较本形态与<strong>切入线形态</strong>、<strong>插入线形态</strong>以及<strong>刺透形态</strong>的异同。</p>
+<p><img alt="1" src="../../img/kline21.png" /></p>
+<h2 id="petrifying-pattern">呆滞形态（Petrifying pattern）</h2>
+<p>这是十字孕线形态的另一种说法</p>
+<h2 id="piercing-pattern">刺透形态（Piercing pattern）</h2>
+<p>也称为“斩回线形态”，是一种底部反转信号。在下降趋势中，出现了一根长长的黑色蜡烛线。翌日，市场本来向下跳空，但是到收市时，形成的却是一根坚挺的白色蜡烛线，并且其收市价向上超越了前一根黑色蜡烛线实体的中点。请比较本形态与<strong>待入线形态</strong>、<strong>切入线形态</strong>以及<strong>插入线形态</strong>的异同。</p>
+<h2 id="rain-drop">雨滴（Rain drop）</h2>
+<p>参见“星线”</p>
+<h2 id="real-body">实体（Real body）</h2>
+<p>在蜡烛线上，通常有一段粗胖的部分，这就是蜡烛线的实体。它是通过当日的开市价和收市价定义的。如果收市价高于开市价，则实体为白色的（或者说是空心的）；如果收市价低于开市价，则实体为黑色的（或者说是涂满的）。参见“蜡烛线与蜡烛图（Candlestick lines and charts）”的示意图。</p>
+<h2 id="rickshaw-man">黄包车夫线（Rickshaw man）</h2>
+<p>参见“长腿十字线”</p>
+<h2 id="rising-three-methods">上升三法形态（Rising three methods）</h2>
+<p>参见“三法形态”</p>
+<h2 id="rising-window">向上的窗口（Rising window）</h2>
+<p>参见“窗口”</p>
+<h2 id="separating-lines">分手线（Separating lines）</h2>
+<p>在上升趋势（或者下降趋势）中，某日市场开市于前一日的开市价的水平，收市于较高的（或者较低的）水平，并且当日蜡烛线的颜色与前一日的相反，由此就形成了一个分手线形态。在该形态出现后，之前的趋势即将恢复。</p>
+<p><img alt="1" src="../../img/kline22.png" /></p>
+<h2 id="shadows">影线（Shadows）</h2>
+<p>在蜡烛线上，一般在其实体的上方和下方各有一个单线段，它们就是蜡烛线的影线。它们分别表示了当日的上、下极端价格。下影线是居于实体之下的影线，它的底端代表当日的最低价。上影线是位于实体上方的影线，它的顶端表示当日的最高价。参见“蜡烛线与蜡烛图”的示意图</p>
+<h2 id="shaven-bottom">光脚（Shaven bottom）</h2>
+<p>指没有下影线的蜡烛线。</p>
+<h2 id="shaven-head">光头（Shaven head）</h2>
+<p>指没有上影线的蜡烛线</p>
+<h2 id="shooting-star">流星（蜡烛）线（Shooting star）</h2>
+<p>在上升趋势中，如果一根蜡烛线具有长长的上影线；只有很短的下影线，甚至没有下影线；具有一个小实体，并且小实体居于当日价格区间的低端，就构成了一根流星线。这是一个看跌的蜡烛图信号</p>
+<p><img alt="1" src="../../img/kline23.png" /></p>
+<h2 id="side-by-side-white-lines">并列阳线（Side-by-side white lines）</h2>
+<p>也称为“并列白色蜡烛线”。本形态是由两根相邻的白色蜡烛线组成的，它们具有相同的开市价，并且它们的实体也具有差不多相同的高度。在上升趋势中，如果出现了一组向上跳空的并列阳线，则构成一个看涨的持续形态。在下降趋势中，如果出现了一组向下跳空的并列阳线，则是看跌的（尽管它们是白色蜡烛线，但它们出现在向下跳空之后）</p>
+<p><img alt="1" src="../../img/kline24.png" /></p>
+<h2 id="spinning-tops">纺锤（蜡烛）线（Spinning tops）</h2>
+<p>指小实体的蜡烛线。</p>
+<h2 id="star">星（蜡烛）线（Star）</h2>
+<p>这是一根小实体的蜡烛线（即一根纺锤线），它从前一根长长的实体处向上或向下跳空。有时候，在下降趋势中，我们也将出现在一根长长的黑色蜡烛线之后的星线称作一个“雨滴”</p>
+<p><img alt="1" src="../../img/kline25.png" /></p>
+<h2 id="tasuki-gaps">跳空并列阴阳线形态（Tasuki gaps）</h2>
+<p>也称“跳空并列黑白（蜡烛）线形态”。既有向上跳空的并列阴阳线形态，也有向下跳空的并列阴阳线形态。向上跳空并列阴阳线形态发生在上升趋势中，先是一根向上跳空的白色蜡烛线，然后跟着一根黑色蜡烛线，两根蜡烛线的大小差不多，并且黑色蜡烛线的开市价处于白色蜡烛线的实体之内，收市价低于白色蜡烛线的实体。黑色蜡烛线的收市价是多空双方交战的关键点。向下跳空并列阴阳线形态发生在下降趋势中，先是一根向下跳空的黑色蜡烛线，然后跟着一根白色蜡烛线，两根蜡烛线的大小差不多，并且白色蜡烛线的开市价处于黑色蜡烛线的实体之内，收市价高于黑色蜡烛线的实体。这是一种看跌的持续形态。跳空并列阴阳线形态是一种少见的形态</p>
+<p><img alt="1" src="../../img/kline26.png" /></p>
+<h2 id="three-buddha-patterns">三尊形态（Three Buddha patterns）</h2>
+<p>三尊顶部形态与西方的头肩形顶部形态是相同的。在日本蜡烛图术语里，三尊顶部形态是三山顶部形态的一个特别的类型，因为其中间的山峰高于两侧的山峰。倒三尊形态与西方的倒头肩形形态是相同的，它是三川底部形态的一种特殊类型，因为中间的那条“河流”深于两侧的“河流”</p>
+<p><img alt="1" src="../../img/kline27.png" /></p>
+<h2 id="three-crows">三只乌鸦（Three crows）</h2>
+<p>在本形态中，连续出现了三根相对较长的黑色蜡烛线，它们的收市价接近各自的最低点。如果它处于高价格水平，或者它出现在一轮拉长的上涨行情之后，则构成了顶部反转信号。</p>
+<p><img alt="1" src="../../img/kline28.png" /></p>
+<h2 id="three-methods">三法形态（Three methods）</h2>
+<p>三法形态有两个类型。一类是下降三法形态，这是一个看跌持续形态。本形态由五根蜡烛线组成。第一根是一个长长的黑色实体；接下来是三根小实体，它们通常都是白色的，并且通通局限于第一根蜡烛线的范围之内；最后是一根黑色蜡烛线，其收市价为当前行情创出了新低。另一类是上升三法形态，这是一个看涨持续形态。其中的第一根是一个长长的白色蜡烛线；接着是三根小实体，它们通常都是黑色的，并且通通局限于第一根蜡烛线的范围之内；第五根是一个坚挺的白色蜡烛线，其收市价为当前行情创出了新高。</p>
+<p><img alt="1" src="../../img/kline29.png" /></p>
+<h2 id="three-mountain-top">三山顶部形态（Three mountain top）</h2>
+<p>这是一类较长期的顶部反转形态。在这类形态的形成过程中，市场的三次上涨行情往往在同一个价格水平上，或者在其附近碰壁回落。</p>
+<p><img alt="1" src="../../img/kline30.png" /></p>
+<h2 id="three-river-bottom">三川底部形态（Three river bottom）</h2>
+<p>在本形态的形成过程中，市场三次向下触及同一个底部区域</p>
+<p><img alt="1" src="../../img/kline31.png" /></p>
+<h2 id="three-white-or-three-advancing-soldiers">白色三兵形态或者白色三兵挺进形态（Three white or three advancing soldiers）</h2>
+<p>在本形态中，相继出现的三根白色蜡烛线组成一群，它们的收市价一个比一个高（并且每根蜡烛线的收市价均接近当日的最高价）。如果这样的三根白色蜡烛线出现在一个相对稳定的价格阶段之后，而且处于一个低价区，则预示着市场将进一步坚挺.</p>
+<p><img alt="1" src="../../img/kline32.png" /></p>
+<h2 id="thrusting-line">插入线形态（Thrusting line）</h2>
+<p>一根白色蜡烛线的收市价向上穿入了前一天黑色实体的内部，但是没有超过该实体的中点。插入线形态比切入线形态更坚挺些，但是不如刺透形态坚挺。在下降趋势中，插入线形态的出现，被视为一个看跌信号（除非在数日之内，市场接连形成了两个插入线形态）。如果本形态出现在上升市场中，则被认为是看涨的。</p>
+<h2 id="towers">塔形形态（Towers）</h2>
+<p>既有塔形顶部形态，也有塔形底部形态。塔形顶部形态，属于顶部反转信号，其组成过程如下：先是一根或数根长长的白色蜡烛线，然后是一段整固行情，最后是一根到数根长长的黑色蜡烛线。在本形态中，整固区域两侧的蜡烛线貌似两个高塔，因此称之为塔形形态。塔形底部形态是一个底部反转形态。它的形成过程是：先是一根或数根长长的黑色蜡烛线，然后是一段水平整固行情，最后市场爆炸性地上冲，形成了一根到数根长长的白色蜡烛线。</p>
+<p><img alt="1" src="../../img/kline33.png" /></p>
+<h2 id="tri-star">三星形态（Tri-star）</h2>
+<p>在本形态中，三根星线组成了一种类似于启明星形态或者黄昏星形态的构造。这是一种极为罕见的蜡烛图形态</p>
+<h2 id="tweezers-top-andbottom">平头顶部形态和平头底部形态（Tweezers top andbottom）</h2>
+<p>当市场在相邻的两个交易日，或者在数个交易日内，两度试探同一个高点或者低点的水平时，就形成了一个平头形态。这类形态本身仅属于小规模的反转信号，但是如果组成平头形态的两根蜡烛线同时还形成了其他蜡烛图指标的话，那么就增添了额外的重要性。举例来说，如果一个十字孕线形态的两根蜡烛线最高价处于相同的水平，那么这两根蜡烛线一举形成了两个蜡烛图形态：一个平头顶部形态和一个十字孕线形态。由此看来，这可能是一个更重要的顶部反转信号。</p>
+<p><img alt="1" src="../../img/kline34.png" /></p>
+<h2 id="umbrella-lines">伞形线（Umbrella lines）</h2>
+<p>锤子线和上吊线共有的名称。伞形线名副其实，蜡烛线的轮廓像一把伞，因为它具有长长的下影线、小实体，并且小实体位于或者接近本时段交易范围的最高处。</p>
+<p><img alt="1" src="../../img/kline35.png" /></p>
+<h2 id="upper-shadow">上影线（Upper shadow）</h2>
+<p>参见“影线”。</p>
+<h2 id="upside-gap-tasuki">向上跳空并列阴阳线形态（Upside gap tasuki）</h2>
+<p>也称为“向上跳空并列黑白（蜡烛）线形态”，参见“跳空并列阴阳线形态”</p>
+<h2 id="upside-gap-two-crows">向上跳空两只乌鸦（Upside gap two crows）</h2>
+<p>这是一种三蜡烛线形态。第一根，是一个长长的白色蜡烛线；第二根，是一个从白色蜡烛线的实体处向上跳空的黑色实体；第三根，也是一个黑色实体，其开市价高于第二根蜡烛线的开市价，并且收市价低于第二根蜡烛线的收市价。本形态很罕见。</p>
+<p><img alt="1" src="../../img/kline36.png" /></p>
+<h2 id="window">窗口（Window）</h2>
+<p>本形态与西方的价格跳空是一回事。窗口属于持续形态。在上涨过程中，如果市场打开了一个向上的窗口，那么这是一个看涨的信号。该窗口将构成一个支撑区域。如果窗口发生在一轮抛售行情中，那么这是一个向下的窗口，属于看跌的信号。该窗口将构成一个阻挡区域</p>
+<p><img alt="1" src="../../img/kline37.png" /></p>
+<h2 id="yin-and-yang">阴线和阳线（Yin and yang）</h2>
+<p>这是黑色蜡烛线（阴线）和白色蜡烛线（阳线）在中文里的名称。</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../pricetarget/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 16章:测算价格目标" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              16章:测算价格目标
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../stock/base/what_stock/" class="md-footer__link md-footer__link--next" aria-label="下一页: 什么是炒股" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              什么是炒股
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+    
+  </body>
+</html>
