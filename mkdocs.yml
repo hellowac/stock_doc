@@ -36,6 +36,10 @@ nav:
       - 利用技术提高银行效率: business/mechanism/bankefficiency.md
       - 国际银行及其服务: business/mechanism/bankservices.md
       - 总 结: business/mechanism/summarize.md
+  - 日本蜡烛图技术:
+    - 15章:蜡烛图与交易量: candlestick/klineandvolume.md
+    - 16章:测算价格目标: candlestick/pricetarget.md
+    - 蜡烛图技术术语及示意图: candlestick/glossarya.md
   - 股票:
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
