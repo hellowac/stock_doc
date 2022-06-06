@@ -37,8 +37,10 @@ nav:
       - 国际银行及其服务: business/mechanism/bankservices.md
       - 总 结: business/mechanism/summarize.md
   - 日本蜡烛图技术:
+    - 16章:蜡烛图与摆动指数: candlestick/oscillators.md
     - 15章:蜡烛图与交易量: candlestick/klineandvolume.md
     - 16章:测算价格目标: candlestick/pricetarget.md
+    - 17章:相互验证的力量: candlestick/mutualverification.md
     - 蜡烛图技术术语及示意图: candlestick/glossarya.md
   - 股票:
     - 股票投资基础知识: 
