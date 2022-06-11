@@ -37,6 +37,8 @@ nav:
       - 国际银行及其服务: business/mechanism/bankservices.md
       - 总 结: business/mechanism/summarize.md
   - K线图技术:
+    - 11章:蜡烛图与趋势线: candlestick/klineandtrendlines.md
+    - 12章:蜡烛图与百分比回撤水平: candlestick/percentdrawdown.md
     - 13章:蜡烛图与移动平均线: candlestick/movingaverages.md
     - 14章:蜡烛图与摆动指数: candlestick/oscillators.md
     - 15章:蜡烛图与交易量: candlestick/klineandvolume.md
@@ -96,6 +98,7 @@ nav:
       - 主力出货手法: stock/tech_article/main_shipping_method.md
       - 图解短线3要素: stock/tech_article/graphical_short_line_3_elements.md
       - 让分时图决定买卖: stock/tech_article/time_chart_decide_the_buying_and_selling.md
+      - 出现这3种形态不能买: stock/tech_article/not_buy_three_kline.md
   - 债券:
     - 可转债: 
       - 可转债基础: bond/convertible_bonds/01_base.md
