@@ -206,6 +206,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hellowac.github.io/stock_doc/candlestick/klineandtrendlines/</loc>
+         <lastmod>2022-06-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hellowac.github.io/stock_doc/candlestick/klineandvolume/</loc>
          <lastmod>2022-06-11</lastmod>
          <changefreq>daily</changefreq>
@@ -222,6 +227,11 @@
     </url>
     <url>
          <loc>https://hellowac.github.io/stock_doc/candlestick/oscillators/</loc>
+         <lastmod>2022-06-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hellowac.github.io/stock_doc/candlestick/percentdrawdown/</loc>
          <lastmod>2022-06-11</lastmod>
          <changefreq>daily</changefreq>
     </url>

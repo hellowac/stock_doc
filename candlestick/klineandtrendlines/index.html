@@ -1,0 +1,2218 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hellowac.github.io/stock_doc/candlestick/klineandtrendlines/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+    
+    
+      
+        <title>11章:蜡烛图与趋势线 - 证券学习文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="证券学习文档" class="md-header__button md-logo" aria-label="证券学习文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            证券学习文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              11章:蜡烛图与趋势线
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="证券学习文档" class="md-nav__button md-logo" aria-label="证券学习文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    证券学习文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          认识商业
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="认识商业" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          认识商业
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_1">
+          理解会计和财务指标
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="理解会计和财务指标" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          理解会计和财务指标
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/base/" class="md-nav__link">
+        会计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/statements/" class="md-nav__link">
+        关键的财务报表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/analyze_statements/" class="md-nav__link">
+        分析财务报表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/account/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_2">
+          财务管理
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="财务管理" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          财务管理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/role/" class="md-nav__link">
+        财务和财务管理者的角色
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/planning/" class="md-nav__link">
+        财务规划
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/operating_expenses/" class="md-nav__link">
+        运营资金的必要性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/short_financing/" class="md-nav__link">
+        取得短期融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/lang_financing/" class="md-nav__link">
+        取得长期融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/manage/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3">
+          证券市场
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="证券市场" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          证券市场
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/foreword/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/function/" class="md-nav__link">
+        证券市场的功能
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/exchange/" class="md-nav__link">
+        证券交易所
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/financing/" class="md-nav__link">
+        股权融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/bond/" class="md-nav__link">
+        发行债券融资
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/buy/" class="md-nav__link">
+        投资者如何购买证券
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/investstock/" class="md-nav__link">
+        投资股票
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/investbond/" class="md-nav__link">
+        投资债券
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/investfund/" class="md-nav__link">
+        投资基金
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/indicators/" class="md-nav__link">
+        了解股市指标
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/stockmarket/summarize/" class="md-nav__link">
+        总结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_4">
+          货币、金融机构和美联储
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="货币、金融机构和美联储" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          货币、金融机构和美联储
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/foreword/" class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/matters/" class="md-nav__link">
+        货币为什么重要
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/moneysupply/" class="md-nav__link">
+        控制货币供给
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/existence/" class="md-nav__link">
+        银行史与美联储存在的必要性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/banksystem/" class="md-nav__link">
+        美国的银行体系
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/protections/" class="md-nav__link">
+        最近的银行危机和政府的保护举措
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/bankefficiency/" class="md-nav__link">
+        利用技术提高银行效率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/bankservices/" class="md-nav__link">
+        国际银行及其服务
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/mechanism/summarize/" class="md-nav__link">
+        总 结
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          K线图技术
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="K线图技术" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          K线图技术
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          11章:蜡烛图与趋势线
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        11章:蜡烛图与趋势线
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    向上倾斜的支撑线
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    下降的阻挡线
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    破低反涨形态与破高反跌形态
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../percentdrawdown/" class="md-nav__link">
+        12章:蜡烛图与百分比回撤水平
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movingaverages/" class="md-nav__link">
+        13章:蜡烛图与移动平均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscillators/" class="md-nav__link">
+        14章:蜡烛图与摆动指数
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../klineandvolume/" class="md-nav__link">
+        15章:蜡烛图与交易量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pricetarget/" class="md-nav__link">
+        16章:测算价格目标
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mutualverification/" class="md-nav__link">
+        17章:相互验证的力量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossarya/" class="md-nav__link">
+        蜡烛图技术术语及示意图
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          股票
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="股票" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          股票
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          股票投资基础知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="股票投资基础知识" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          股票投资基础知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/what_stock/" class="md-nav__link">
+        什么是炒股
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/must_know_concept/" class="md-nav__link">
+        必须知道的概念
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/must_know_trading_rule/" class="md-nav__link">
+        必懂的交易规则
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_pe_ratio/" class="md-nav__link">
+        估值指标市盈率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_pb_ratio/" class="md-nav__link">
+        估值指标市净率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_ps_ratio/" class="md-nav__link">
+        估值指标市销率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_pcf_ratio/" class="md-nav__link">
+        估值指标市现率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/valuation_peg_ratio/" class="md-nav__link">
+        估值指标PEG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_k_graph/" class="md-nav__link">
+        了解k线图
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_20_k_graph/" class="md-nav__link">
+        必须掌握的20种K线形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/up_k_graph/" class="md-nav__link">
+        经典的看涨K线组合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/down_k_graph/" class="md-nav__link">
+        经典的看跌K线组合
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_moving_average/" class="md-nav__link">
+        一文了解均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/common_used_moving_average/" class="md-nav__link">
+        均线使用中的常用知识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/moving_average_meaning/" class="md-nav__link">
+        均线排列的含义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/response_mainforce_cheat/" class="md-nav__link">
+        应对主力K线骗线的几种方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_mvoing_average_choice/" class="md-nav__link">
+        如何利用均线判断股票的回调力度强弱
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_buy_by_moving_average/" class="md-nav__link">
+        常见的均线“买入”信号有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_sale_by_moving_average/" class="md-nav__link">
+        常见的均线“卖出”信号有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_five_moving_average_usage/" class="md-nav__link">
+        5日均线的常见用法有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/know_bolling_bands/" class="md-nav__link">
+        什么是布林线？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/boll_down_usage/" class="md-nav__link">
+        布林线下轨的常见用法有哪些？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/boll_up_and_down_opening/" class="md-nav__link">
+        布林线的上、下开口形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/boll_flare_pattern/" class="md-nav__link">
+        布林线的喇叭口形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/what_is_macd/" class="md-nav__link">
+        什么是MACD？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/macd_top_divergence/" class="md-nav__link">
+        MACD形态之顶背离
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/base/macd_down_divergence/" class="md-nav__link">
+        MACD形态之底背离
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          均线策略
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="均线策略" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          均线策略
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/01_base/" class="md-nav__link">
+        为什么说均线是神奇的线?（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/02_base/" class="md-nav__link">
+        为什么说均线是神奇的线？（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/03_base/" class="md-nav__link">
+        均线不同排列形态意味着什么？（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/04_base/" class="md-nav__link">
+        均线不同排列形态意味着什么？（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/05_base/" class="md-nav__link">
+        格兰威尔八大买卖法则（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/06_base/" class="md-nav__link">
+        格兰威尔八大买卖法则（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/07_base/" class="md-nav__link">
+        双均线战法（上）-单均线VS双均线
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/08_base/" class="md-nav__link">
+        双均线战法（下）-双均线战法应用技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/09_base/" class="md-nav__link">
+        三均线战法（上）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/10_base/" class="md-nav__link">
+        三均线战法（下）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/average_line/11_base/" class="md-nav__link">
+        一通百通，均线战法很轻松
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          筹码分布
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="筹码分布" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          筹码分布
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chip_distribution/double_peaks_and_valleys/" class="md-nav__link">
+        分布形态之双峰填谷
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          技术文章
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="技术文章" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          技术文章
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/time_chart_buy_skill/" class="md-nav__link">
+        分时图表买点技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/ant_on_the_tree/" class="md-nav__link">
+        股票出现“蚂蚁上树”形态
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/short_op/" class="md-nav__link">
+        一个短线操作方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/k_and_volume/" class="md-nav__link">
+        k线与成交量有什么关系
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/5_15_30_60/" class="md-nav__link">
+        5分钟，15分钟，30分钟，60分钟线分别说明什么？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/silianyang_catches_the_daily_limit/" class="md-nav__link">
+        四连阳抓涨停
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/main_shipping_method/" class="md-nav__link">
+        主力出货手法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/graphical_short_line_3_elements/" class="md-nav__link">
+        图解短线3要素
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/time_chart_decide_the_buying_and_selling/" class="md-nav__link">
+        让分时图决定买卖
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stock/tech_article/not_buy_three_kline/" class="md-nav__link">
+        出现这3种形态不能买
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          债券
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="债券" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          债券
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          可转债
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="可转债" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          可转债
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/01_base/" class="md-nav__link">
+        可转债基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/02_subscription/" class="md-nav__link">
+        中签和收益
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/03_how_to_profit/" class="md-nav__link">
+        获利方式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/04_moment_sense/" class="md-nav__link">
+        相关常识
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/05_cal_permium_rate/" class="md-nav__link">
+        计算溢价率
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/06_cal_permium_rate/" class="md-nav__link">
+        计算溢价率2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/07_debt/" class="md-nav__link">
+        债性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bond/convertible_bonds/08_risk/" class="md-nav__link">
+        风险
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          关于
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="关于" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          关于
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        制作方式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        主题
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    向上倾斜的支撑线
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    下降的阻挡线
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    破低反涨形态与破高反跌形态
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="_1">蜡烛图与趋势线</h1>
+<p><code>“有备而无患”</code></p>
+<p>本章将把蜡烛图技术与<strong>趋势线</strong>、<strong>市场对趋势线的突破</strong>和<strong>假突破</strong>，以及<strong>突破支撑区域</strong>和<strong>阻挡区域</strong>等方面放到一起，进行综合研究。</p>
+<h2 id="_2">向上倾斜的支撑线</h2>
+<p>如图11.1所示，是一条<strong>向上倾斜的支撑线</strong>。<strong>至少需要两个向上反弹的低点才能连接出这样一条直线，如果通过三个或者更多向上反弹的低点，那就更好</strong>。在蜡烛图上绘制上升的支撑线时，把蜡烛线下影线的低点作为连接点。这根支撑线表明，在这段时间里，<strong>买方比卖方更为主动、积极，因为在逐渐提升的新低点处，还能够引来新的需求</strong>。一般说来，这根线标志着市场上买方多于卖方。既然每一笔交易都同时需要一位买方和一位卖方，我更愿意认为，不是买方比卖方多，而是买方比卖方更为积极进取。</p>
+<p><img alt="1" src="../../img/kline1101.png" /></p>
+<p>如图11.2所示，是一根向下倾斜的支撑线。正如在讨论图11.1时所说的，传统的支撑线是通过连接越来越高的低点得来的。不过，图11.2中的支撑线连接的则是越来越低的低点。下降的支撑线之所以有用武之地，是因为在市场上发生了许多实例，其价格是从下降的直线处向上反弹的。在缺少其他关于支撑水平的线索时，这样的直线给我们提供了潜在的支撑区域。<strong>在什么样的情形下不存在明显的支撑水平呢？当市场为当前行情创新低，特别是创纪录的新低的时候。</strong></p>
+<p><img alt="1" src="../../img/kline1102.png" /></p>
+<p>常规的上升支撑线因为向上倾斜，被视为具有看涨意义。<strong>下降的支撑线因为市场正在创造更低的低点，可被当作具有看跌意义的支撑线</strong>。如此一来，从这类支撑线上引发的向上反弹可能只是有限幅度的、不持久的。虽然如此，它可能构成了考虑买进的区域，特别是在若干技术指标在这类直线上汇聚起来的时候。</p>
+<p>在图11.3中，11月22日的早晨出现了一个<strong>刺透形态</strong>。从这个<strong>刺透形态</strong>开始出现了一轮小规模的上涨行情，之后在12:30-13:00左右，市场回落到了62.50美元的区域。连接<strong>刺透形态</strong>的低点与几个小时后形成的接近62.50美元的低点，我们得到了一条上升的支撑线。这根线与11月22日晚间的某个时段相交，在相交处我们看到了一个<strong>刺透形态</strong>的变体（之所以说它是变体，是因为其中的白色蜡烛线的收市价没有向上超越之前黑色蜡烛线的中点）。本例说明，即便蜡烛图形态不太理想，但它依然可能提供行情反转信号。具体来说，虽然这不是一个理想的<strong>刺透形态</strong>，但是它来自那条上升的支撑线，因此其重要性得到了加持。对于多头已经控制市场，马上出现了进一步的增强信号，一个向上的窗口成功地测试了这条支撑线。该窗口在11月24日早间成为支撑区域。</p>
+<p><img alt="1" src="../../img/kline1103.png" /></p>
+<p>在图11.4中，整个1月，根据图中一系列更低的低点来评估，亚马逊始终处在下降趋势中。连接低点L1和L2，提供了一条尝试性的支撑线。在L3处，当市场防守成功后，这条下降的支撑线的重要性得到了确认。于L4的低点处，市场对这条向下倾斜的支撑线试探成功了，并且形成了一个看涨的<strong>刺透形态</strong>。从本<strong>刺透形态</strong>开始的上冲行情在2月2日和3日之间打开了一个向上的窗口。一方面，在2月9日长长的白色蜡烛线之前，窗口的底边作为支撑水平保持完好；另一方面，在2月9日长长的白色蜡烛线之后，当前上冲行情遭遇了一根十字线（它也是一根流星线），被短路了。</p>
+<p><img alt="1" src="../../img/kline1104.png" /></p>
+<p>如图11.5所示，通过A和B两处的低点连接成一条下降的支撑线，再加上C处的看涨吞没形态的低点。对该直线最终的试探来自D处，之后跟着出现了一根倒锤子线。倒锤子线的后一天是一根白色蜡烛线，两者组成了一个看涨吞没形态。事实上，如果看涨吞没形态的白色蜡烛线的收市价更高一些，就会形成一个<strong>启明星形态</strong>。尽管如此，由于<strong>倒锤子线</strong>、<strong>看涨吞没形态</strong>，以及下降的支撑线汇聚在一起，宛如一声“空头平仓！”的大吼。</p>
+<p><img alt="1" src="../img/kline1105.png" /></p>
+<h2 id="_3">下降的阻挡线</h2>
+<p>图11.6展示了一条典型的<strong>下降的阻挡线</strong>。至少需要两个向下反弹的高点才能连接出这样一条直线。当然，如果有三个或更多个高点，直线就更有影响力。它表示卖方比买方更为积极进取，因为卖方愿意在更低的高点上卖出。这条阻挡线表明，在这段时间中，<strong>卖方比买方更为大胆、积极，因为在逐渐降低的新高点处，依然吸引了卖方的卖出意愿</strong>。这根直线反映出市场正处于下降趋势中。在蜡烛图上绘制阻挡线时，方法是连接蜡烛线上影线的顶点。</p>
+<p><img alt="1" src="../../img/kline1106.png" /></p>
+<p>常规的阻挡线是由一系列越来越低的高点连接而成的。但是，如果市场正处在历史的新高位置，不存在更早的高点可用来连成潜在的阻挡线，那怎么办呢？在这种情况下，我常常绘制上升的阻挡线。如图11.7所示，这是连接一系列更高的高点得来的（不同于下降的阻挡线通过连接更低的高点得来）。</p>
+<p><img alt="1" src="../../img/kline1107.png" /></p>
+<p>在图11.8中，我们连接区域1、2和3，得到了一条经典的阻挡线。白银从区域2的孕线形态开始形成一轮下降行情，下降行情的底部形成了两根大风大浪蜡烛线。这是第一个征兆，表明市场向下的力量正在消散。在3月6日和7日之间，打开了一个向上的窗口，驱使趋势转而向上。窗口立即转化为支撑区域，随后几天的变化证明了这一点。</p>
+<p><img alt="1" src="../../img/kline1108.png" /></p>
+<p>现在，蜡烛图上已经出现了反转信号，我们可以转向西方技术分析——这条阻挡线，来寻求价格目标。这构成了潜在的阻挡区域，3月13日所在的一周，市场陷于停顿，正说明了这一点。本图强调了我们离不开西方技术分析工具的原因，哪怕我们的注意力依然主要放在蜡烛图分析上。蜡烛图能够给出早期的反转信号，而西方工具能够提供价格目标和止损区域。</p>
+<p>在图11.9中，4月12日（在2处）有一根长长的白色蜡烛线，其收市价创了新高，从而维持了多头趋势的力道。次日，一根小黑色实体成为组成2处的孕线形态的第二根蜡烛线，因而整个市场的基调都发生了转变。连接1和2两处的高点，得到了一条上升的阻挡线。该线5月中旬时在50美元左右与行情发生接触。接触点在区域3处，接近50美元的水平，另一个孕线形态与上升的阻挡线接触。（事实上，5月13日的上影线向上超过了前一天的价格区间，但是这一点并不否定此处的孕线形态，因为孕线形态只讲究实体的部分。）于是，蜡烛线为我们提供额外的证据（通过这个孕线形态和孕线形态第二根蜡烛线的长上影线），表明这条上升的阻挡线可能成为阻挡区域，即将发生防守性的行情。</p>
+<p><img alt="1" src="../../img/kline1109.png" /></p>
+<p>看看图11.10，其中有一根向上倾斜的阻挡线。从5月中旬开始的价格变化表现为一系列越来越高的高点。然而，6月30日若干技术因素汇聚起来，在上升的阻挡线处，形成了一根近似十字线的蜡烛线（它同时组成了一个十字孕线形态），发出信号指示多头采取保护措施。请注意，在近似十字线的蜡烛线的后一天，在31美元和30美元之间打开了一个巨大的向下的窗口。市场持续下跌，直到7月初找到支撑区域才罢休。从该支撑区域而来的上涨行情杀了一个回马枪，到达上述窗口的顶边。</p>
+<p><img alt="1" src="../../img/kline1110.png" /></p>
+<h2 id="_4">破低反涨形态与破高反跌形态</h2>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../../business/mechanism/summarize/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 总 结" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              总 结
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../percentdrawdown/" class="md-footer__link md-footer__link--next" aria-label="下一页: 12章:蜡烛图与百分比回撤水平" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              12章:蜡烛图与百分比回撤水平
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+    
+  </body>
+</html>
