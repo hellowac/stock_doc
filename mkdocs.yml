@@ -37,6 +37,7 @@ nav:
       - 国际银行及其服务: business/mechanism/bankservices.md
       - 总 结: business/mechanism/summarize.md
   - K线图技术:
+    - 8章:神奇的十字星: candlestick/crosshair.md
     - 9章:蜡烛图技术汇总: candlestick/summary.md
     - 10章:蜡烛图信号的汇聚: candlestick/convergence.md
     - 11章:蜡烛图与趋势线: candlestick/klineandtrendlines.md
