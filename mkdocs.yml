@@ -115,6 +115,15 @@ nav:
       - 计算溢价率2: bond/convertible_bonds/06_cal_permium_rate.md
       - 债性: bond/convertible_bonds/07_debt.md
       - 风险: bond/convertible_bonds/08_risk.md
+  - 龙头股:
+    - 新能源: articles/new_energy.md
+  - 同花顺:
+    - 股票分类:
+      - 同花顺行业: ths/同花顺行业.md
+      - 证监会行业: ths/证监会行业.md
+      - 地域: ths/地域.md
+      - 概念: ths/概念.md
+    - 行情中心: ths/行情中心.md
   - 关于: 
     - 制作方式: index.md
     - 主题: about.md
