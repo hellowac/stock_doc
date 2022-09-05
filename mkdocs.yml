@@ -124,6 +124,9 @@ nav:
       - 地域: ths/地域.md
       - 概念: ths/概念.md
     - 行情中心: ths/行情中心.md
+  - 家装:
+    - 装修购买清单: home/装修购买清单.md
+    - 全包概念: home/全包概念.md
   - 关于: 
     - 制作方式: index.md
     - 主题: about.md
