@@ -50,6 +50,7 @@ nav:
     - 17章:相互验证的力量: candlestick/mutualverification.md
     - 蜡烛图技术术语及示意图: candlestick/glossarya.md
   - 股票:
+    - 代码前缀合集: stock/base/code_prefix.md
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
       - 必须知道的概念: stock/base/must_know_concept.md
