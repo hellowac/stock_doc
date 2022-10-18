@@ -50,6 +50,7 @@ nav:
     - 17章:相互验证的力量: candlestick/mutualverification.md
     - 蜡烛图技术术语及示意图: candlestick/glossarya.md
   - 股票:
+    - 代码前缀合集: stock/base/code_prefix.md
     - 股票投资基础知识: 
       - 什么是炒股: stock/base/what_stock.md
       - 必须知道的概念: stock/base/must_know_concept.md
@@ -125,6 +126,11 @@ nav:
       - 地域: ths/地域.md
       - 概念: ths/概念.md
     - 行情中心: ths/行情中心.md
+  - 家装:
+    - 装修购买清单: home/装修购买清单.md
+    - 全包概念: home/全包概念.md
+  - 统考:
+    - 企业经营战略: exam/企业经营战略.md
   - 关于: 
     - 制作方式: index.md
     - 主题: about.md
