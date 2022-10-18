@@ -79,6 +79,7 @@ nav:
       - MACD形态之顶背离: stock/base/macd_top_divergence.md
       - MACD形态之底背离: stock/base/macd_down_divergence.md
     - 均线策略:
+      - 常用的均线有哪些？: stock/average_line/00_common_use_line.md
       - 为什么说均线是神奇的线?（上）: stock/average_line/01_base.md
       - 为什么说均线是神奇的线？（下）: stock/average_line/02_base.md
       - 均线不同排列形态意味着什么？（上）: stock/average_line/03_base.md
