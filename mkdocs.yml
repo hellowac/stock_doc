@@ -1,6 +1,10 @@
 site_name: 证券学习文档
 site_url: https://hellowac.github.io/stock_doc/
 nav:
+  - 财务通识二十讲:
+    - 【1】会计学/财务管理学/经济学/金融学的区别: course/fk/lesson1.md
+    - 【2】会计：企业与投资者决策的基础: course/fk/lesson2.md
+    - 【3】复式记账与会计准则: course/fk/lesson3.md
   - 认识商业:
     - 理解会计和财务指标:
       - 会计: business/account/base.md
