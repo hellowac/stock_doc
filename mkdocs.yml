@@ -114,6 +114,7 @@ nav:
       - 分时图使用技巧: stock/tech_article/time_line_chart_skill.md
   - 债券:
     - 可转债: 
+      - 可转债交易规则: bond/convertible_bonds/00_base.md
       - 可转债基础: bond/convertible_bonds/01_base.md
       - 中签和收益: bond/convertible_bonds/02_subscription.md
       - 获利方式: bond/convertible_bonds/03_how_to_profit.md
