@@ -49,6 +49,25 @@ nav:
     - 16章:测算价格目标: candlestick/pricetarget.md
     - 17章:相互验证的力量: candlestick/mutualverification.md
     - 蜡烛图技术术语及示意图: candlestick/glossarya.md
+  - 周期:
+    - 铁律: cycle/ironlaw.md
+    - 月份周期:
+      - 一月: cycle/month/january.md
+      - 二月: cycle/month/february.md
+      - 三月: cycle/month/march.md
+      - 四月: cycle/month/april.md
+      - 五月: cycle/month/may.md
+      - 六月: cycle/month/june.md
+      - 七月: cycle/month/july.md
+      - 八月: cycle/month/august.md
+      - 九月: cycle/month/september.md
+      - 十月: cycle/month/october.md
+      - 十一月: cycle/month/november.md
+      - 十二月: cycle/month/december.md
+    - 行业周期:
+      - 强周期行业: cycle/industry/strong.md
+      - 弱周期行业: cycle/industry/weak.md
+      - 成长性行业: cycle/industry/growth.md
   - 股票:
     - 代码前缀合集: stock/base/code_prefix.md
     - 股票投资基础知识: 
