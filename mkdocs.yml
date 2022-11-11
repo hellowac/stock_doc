@@ -1,6 +1,28 @@
 site_name: 证券学习文档
 site_url: https://hellowac.github.io/stock_doc/
 nav:
+  - 财务通识二十讲:
+    - 【1】会计学/财务管理学/经济学/金融学的区别: course/fk/lesson1.md
+    - 【2】会计：企业与投资者决策的基础: course/fk/lesson2.md
+    - 【3】复式记账与会计准则: course/fk/lesson3.md
+    - 【4】了解财务的基本概念（上）: course/fk/lesson4.md
+    - 【5】了解财务的基本概念（中）: course/fk/lesson5.md
+    - 【6】了解财务的基本概念（下）: course/fk/lesson6.md
+    - 【7】读懂企业财务报表（1）概述: course/fk/lesson7.md
+    - 【8】读懂资产负债表中的资产: course/fk/lesson8.md
+    - 【9】读懂资产负债表中的负债: course/fk/lesson9.md
+    - 【10】读懂资产负债表中的所有者权益: course/fk/lesson10.md
+    - 【11】读懂所有者权益的变动: course/fk/lesson11.md
+    - 【12】读懂损益表: course/fk/lesson12.md
+    - 【13】读懂现金流量表: course/fk/lesson13.md
+    - 【14】财务报表分析：概述与准备: course/fk/lesson14.md
+    - 【15】财务报表分析(上)：方法: course/fk/lesson15.md
+    - 【16】财务报表分析(上)：内容: course/fk/lesson16.md
+    - 【17】企业财务报表造假：动机与手段: course/fk/lesson17.md
+    - 【18】企业财务报表造假：迹象: course/fk/lesson18.md
+    - 【19】认识EPS、市盈率、市净率: course/fk/lesson19.md
+    - 【20】辨析各种有价证券: course/fk/lesson20.md
+    - 【21】资产的价值与价值评估: course/fk/lesson21.md
   - 认识商业:
     - 理解会计和财务指标:
       - 会计: business/account/base.md
@@ -129,6 +151,7 @@ nav:
       - 分时图使用技巧: stock/tech_article/time_line_chart_skill.md
   - 债券:
     - 可转债: 
+      - 可转债交易规则: bond/convertible_bonds/00_base.md
       - 可转债基础: bond/convertible_bonds/01_base.md
       - 中签和收益: bond/convertible_bonds/02_subscription.md
       - 获利方式: bond/convertible_bonds/03_how_to_profit.md
