@@ -1,6 +1,36 @@
 site_name: 证券学习文档
 site_url: https://hellowac.github.io/stock_doc/
+# theme: readthedocs
+theme: 
+  name: 'material'
+  language: zh
+  features:
+    - announce.dismiss
+markdown_extensions:
+  - pymdownx.inlinehilite   # 单行高亮, 参考: https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#highlighting-specific-lines
+  - pymdownx.critic         # 支持部分字段格式化，参考：https://squidfunk.github.io/mkdocs-material/reference/formatting/
+  - pymdownx.highlight      # 支持代码块高亮显示
+  - pymdownx.superfences 
 nav:
+  - 一个散户的自我修养:
+    - 【0】序言，前言: training/0.md
+    - 【1】有关股市的事实: training/1.md
+    - 【2】你其实也有优势: training/2.md
+    - 【3】捅破投资的“窗户纸”: training/3.md
+    - 【4】像胜出者一样思考: training/4.md
+    - 【5】认知偏差与决策链: training/5.md
+    - 【6】揭开价值的面纱: training/6.md
+    - 【7】让视角回归本质: training/7.md
+    - 【8】高价值企业的奥秘: training/8.md
+    - 【9】经营观测与守候: training/9.md
+    - 【10】从雪球到雪崩: training/10.md
+    - 【11】对象、时机、力度: training/11.md
+    - 【12】市场定价的逻辑: training/12.md
+    - 【13】预期与回报: training/13.md
+    - 【14】永远的周期轮回: training/14.md
+    - 【15】估值的困与惑: training/15.md
+    - 【16】客观理性看A股: training/16.md
+    - 【总结篇】好生意，好企业，好投资: training/17.md
   - 财务通识二十讲:
     - 【1】会计学/财务管理学/经济学/金融学的区别: course/fk/lesson1.md
     - 【2】会计：企业与投资者决策的基础: course/fk/lesson2.md
@@ -177,9 +207,3 @@ nav:
   - 关于: 
     - 制作方式: index.md
     - 主题: about.md
-theme: 
-  name: 'material'
-  language: zh
-  features:
-    - announce.dismiss
-# theme: readthedocs
