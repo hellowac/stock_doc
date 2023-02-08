@@ -5,12 +5,30 @@ theme:
   name: 'material'
   language: zh
   features:
-    - announce.dismiss
+    # - announce.dismiss
+    - content.code.annotate
+
 markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html        # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#footnotes
+  # pymdownx 扩展，参考：https://facelessuser.github.io/pymdown-extensions/
   - pymdownx.inlinehilite   # 单行高亮, 参考: https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#highlighting-specific-lines
   - pymdownx.critic         # 支持部分字段格式化，参考：https://squidfunk.github.io/mkdocs-material/reference/formatting/
   - pymdownx.highlight      # 支持代码块高亮显示
-  - pymdownx.superfences 
+  - pymdownx.details
+  - pymdownx.superfences:    # 注释 : 
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.caret          # 下划线, 上标 : https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/?h=caret#caret-mark-tilde 
+                            #               https://facelessuser.github.io/pymdown-extensions/extensions/caret/
+  - pymdownx.mark          # 标记 :https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/?h=caret#caret-mark-tilde
+                            #      https://facelessuser.github.io/pymdown-extensions/extensions/mark/
+  - pymdownx.tilde          # 删除线, 下标  参考: https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/?h=caret#caret-mark-tilde
+                            #                   https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
 nav:
   - 一个散户的自我修养:
     - 【0】序言，前言: training/0.md
