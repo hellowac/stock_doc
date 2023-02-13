@@ -8,6 +8,10 @@ theme:
     # - announce.dismiss
     - content.code.annotate
 
+# 图片灯箱效果
+plugins:
+  - glightbox
+
 markdown_extensions:
   - tables
   - admonition
