@@ -10,6 +10,7 @@ theme:
 
 # 图片灯箱效果
 plugins:
+  - search
   - glightbox
 
 markdown_extensions:
