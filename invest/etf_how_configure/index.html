@@ -1,0 +1,1728 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://hellowac.github.io/stock_doc/invest/etf_how_configure/" rel="canonical"/>
+<link href="../etf_investment_strategy/" rel="prev"/>
+<link href="../smart_beta_guide/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.11" name="generator"/>
+<title>ETF基金配置策略 - 证券学习文档</title>
+<link href="../../assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#etf">
+          跳转至
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="页眉" class="md-header__inner md-grid">
+<a aria-label="证券学习文档" class="md-header__button md-logo" data-md-component="logo" href="../.." title="证券学习文档">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            证券学习文档
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              ETF基金配置策略
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="搜索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="搜索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="查找" class="md-search__options">
+<button aria-label="清空当前内容" class="md-search__icon md-icon" tabindex="-1" title="清空当前内容" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="标签" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../stock/">
+        基础知识
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../training/0/">
+        一个散户的自我修养
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../course/fk/lesson1/">
+        财务通识二十讲
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../business/account/base/">
+        认识商业
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../candlestick/persistentpattern/">
+        K线图技术
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../cycle/ironlaw/">
+        周期
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../stock/base/code_prefix/">
+        股票
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../bond/convertible_bonds/00_base/">
+        债券
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../articles/new_energy/">
+        龙头股
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../ths/%E5%90%8C%E8%8A%B1%E9%A1%BA%E8%A1%8C%E4%B8%9A/">
+        同花顺
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../home/%E8%A3%85%E4%BF%AE%E8%B4%AD%E4%B9%B0%E6%B8%85%E5%8D%95/">
+        家装
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../exam/%E4%BC%81%E4%B8%9A%E7%BB%8F%E8%90%A5%E6%88%98%E7%95%A5/">
+        统考
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        关于
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="证券学习文档" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="证券学习文档">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    证券学习文档
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          基础知识
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+          基础知识
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../stock/">
+        股票
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../subscription/">
+        新股申购
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../entrust/">
+        股票委托
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dividend/">
+        股票分红
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../call_auction/">
+        什么是集合竞价
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../trading_rule/">
+        交易规则
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hongkong_stock/">
+        港股通
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hongkong_open_account/">
+        港股通:开户条件
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hongkong_trading_rule/">
+        港股通:交易规则
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hongkong_trading_cost/">
+        港股通:交易费用
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hongkong_trading_risk/">
+        港股通:交易风险
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../markets/">
+        市场版块
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../st_board/">
+        科创板
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../st_board_guide/">
+        科创板:精要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../fund/">
+        基金
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_management01/">
+        基金入门
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_management02/">
+        基金常识
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_management03/">
+        常用术语
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_management04/">
+        指数基金
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_management05/">
+        债券基金
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_20_question/">
+        基金理财二十问
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../finance_etf/">
+        EFT基金精要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../index_fund/">
+        指数基金家族
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf_fund_guide/">
+        ETF基金简介
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf_fund_advantage/">
+        ETF基金优势
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf_vs_stock/">
+        ETF VS 股票
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf_how_buy/">
+        ETF基金怎么买
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf_how_choice/">
+        ETF基金怎么选
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../etf_investment_strategy/">
+        ETF基金投资策略
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          ETF基金配置策略
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        ETF基金配置策略
+      </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#etf_1">
+    核心和卫星应该如何选择ETF呢？
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../smart_beta_guide/">
+        Smart Beta基金简介
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../bound/">
+        债券
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../derivatives/">
+        金融衍生工具
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../handicap_indicator/">
+        盘口指标
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tech_analysis_chip_distibution/">
+        筹码分布
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tech_analysis_chip_choice/">
+        筹码精选
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          一个散户的自我修养
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          一个散户的自我修养
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/0/">
+        【0】序言，前言
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          第一部分 正视投资
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          第一部分 正视投资
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/1/">
+        【1】有关股市的事实
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/2/">
+        【2】你其实也有优势
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/3/">
+        【3】捅破投资的“窗户纸”
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/4/">
+        【4】像胜出者一样思考
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/5/">
+        【5】认知偏差与决策链
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          第二部分 发现价值
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          第二部分 发现价值
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/6/">
+        【6】揭开价值的面纱
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/7/">
+        【7】让视角回归本质
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/8/">
+        【8】高价值企业的奥秘
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/9/">
+        【9】经营观测与守候
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/10/">
+        【10】从雪球到雪崩
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/11/">
+        【11】对象、时机、力度
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          第三部分 理解市场
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          第三部分 理解市场
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/12/">
+        【12】市场定价的逻辑
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/13/">
+        【13】预期与回报
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/14/">
+        【14】永远的周期轮回
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/15/">
+        【15】估值的困与惑
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/16/">
+        【16】客观理性看A股
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../training/17/">
+        【总结篇】好生意，好企业，好投资
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          财务通识二十讲
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          财务通识二十讲
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson1/">
+        【1】会计学/财务管理学/经济学/金融学的区别
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson2/">
+        【2】会计：企业与投资者决策的基础
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson3/">
+        【3】复式记账与会计准则
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson4/">
+        【4】了解财务的基本概念（上）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson5/">
+        【5】了解财务的基本概念（中）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson6/">
+        【6】了解财务的基本概念（下）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson7/">
+        【7】读懂企业财务报表（1）概述
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson8/">
+        【8】读懂资产负债表中的资产
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson9/">
+        【9】读懂资产负债表中的负债
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson10/">
+        【10】读懂资产负债表中的所有者权益
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson11/">
+        【11】读懂所有者权益的变动
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson12/">
+        【12】读懂损益表
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson13/">
+        【13】读懂现金流量表
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson14/">
+        【14】财务报表分析：概述与准备
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson15/">
+        【15】财务报表分析(上)：方法
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson16/">
+        【16】财务报表分析(上)：内容
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson17/">
+        【17】企业财务报表造假：动机与手段
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson18/">
+        【18】企业财务报表造假：迹象
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson19/">
+        【19】认识EPS、市盈率、市净率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson20/">
+        【20】辨析各种有价证券
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../course/fk/lesson21/">
+        【21】资产的价值与价值评估
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          认识商业
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          认识商业
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          理解会计和财务指标
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+          理解会计和财务指标
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/account/base/">
+        会计
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/account/statements/">
+        关键的财务报表
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/account/analyze_statements/">
+        分析财务报表
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/account/summarize/">
+        总结
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          财务管理
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+          财务管理
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/manage/role/">
+        财务和财务管理者的角色
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/manage/planning/">
+        财务规划
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/manage/operating_expenses/">
+        运营资金的必要性
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/manage/short_financing/">
+        取得短期融资
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/manage/lang_financing/">
+        取得长期融资
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/manage/summarize/">
+        总结
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          证券市场
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          证券市场
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/foreword/">
+        前言
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/function/">
+        证券市场的功能
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/exchange/">
+        证券交易所
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/financing/">
+        股权融资
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/bond/">
+        发行债券融资
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/buy/">
+        投资者如何购买证券
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/investstock/">
+        投资股票
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/investbond/">
+        投资债券
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/investfund/">
+        投资基金
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/indicators/">
+        了解股市指标
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/stockmarket/summarize/">
+        总结
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          货币、金融机构和美联储
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          货币、金融机构和美联储
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/foreword/">
+        前言
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/matters/">
+        货币为什么重要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/moneysupply/">
+        控制货币供给
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/existence/">
+        银行史与美联储存在的必要性
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/banksystem/">
+        美国的银行体系
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/protections/">
+        最近的银行危机和政府的保护举措
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/bankefficiency/">
+        利用技术提高银行效率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/bankservices/">
+        国际银行及其服务
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business/mechanism/summarize/">
+        总 结
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          K线图技术
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          K线图技术
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/persistentpattern/">
+        7章:持续形态
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/crosshair/">
+        8章:神奇的十字星
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/summary/">
+        9章:蜡烛图技术汇总
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/convergence/">
+        10章:蜡烛图信号的汇聚
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/klineandtrendlines/">
+        11章:蜡烛图与趋势线
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/percentdrawdown/">
+        12章:蜡烛图与百分比回撤水平
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/movingaverages/">
+        13章:蜡烛图与移动平均线
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/oscillators/">
+        14章:蜡烛图与摆动指数
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/klineandvolume/">
+        15章:蜡烛图与交易量
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/pricetarget/">
+        16章:测算价格目标
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/mutualverification/">
+        17章:相互验证的力量
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../candlestick/glossarya/">
+        蜡烛图技术术语及示意图
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          周期
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          周期
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/ironlaw/">
+        铁律
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+          月份周期
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_2">
+<span class="md-nav__icon md-icon"></span>
+          月份周期
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/january/">
+        一月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/february/">
+        二月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/march/">
+        三月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/april/">
+        四月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/may/">
+        五月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/june/">
+        六月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/july/">
+        七月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/august/">
+        八月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/september/">
+        九月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/october/">
+        十月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/november/">
+        十一月
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/month/december/">
+        十二月
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          行业周期
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_3">
+<span class="md-nav__icon md-icon"></span>
+          行业周期
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/industry/strong/">
+        强周期行业
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/industry/weak/">
+        弱周期行业
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cycle/industry/growth/">
+        成长性行业
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          股票
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          股票
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/code_prefix/">
+        代码前缀合集
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          股票投资基础知识
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+          股票投资基础知识
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/what_stock/">
+        什么是炒股
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/must_know_concept/">
+        必须知道的概念
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/must_know_trading_rule/">
+        必懂的交易规则
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/valuation_pe_ratio/">
+        估值指标市盈率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/valuation_pb_ratio/">
+        估值指标市净率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/valuation_ps_ratio/">
+        估值指标市销率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/valuation_pcf_ratio/">
+        估值指标市现率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/valuation_peg_ratio/">
+        估值指标PEG
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_k_graph/">
+        了解k线图
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_20_k_graph/">
+        必须掌握的20种K线形态
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/up_k_graph/">
+        经典的看涨K线组合
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/down_k_graph/">
+        经典的看跌K线组合
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_moving_average/">
+        一文了解均线
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/common_used_moving_average/">
+        均线使用中的常用知识
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/moving_average_meaning/">
+        均线排列的含义
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/response_mainforce_cheat/">
+        应对主力K线骗线的几种方法
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_mvoing_average_choice/">
+        如何利用均线判断股票的回调力度强弱
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_buy_by_moving_average/">
+        常见的均线“买入”信号有哪些？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_sale_by_moving_average/">
+        常见的均线“卖出”信号有哪些？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_five_moving_average_usage/">
+        5日均线的常见用法有哪些？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/know_bolling_bands/">
+        什么是布林线？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/boll_down_usage/">
+        布林线下轨的常见用法有哪些？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/boll_up_and_down_opening/">
+        布林线的上、下开口形态
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/boll_flare_pattern/">
+        布林线的喇叭口形态
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/what_is_macd/">
+        什么是MACD？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/macd_top_divergence/">
+        MACD形态之顶背离
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/macd_down_divergence/">
+        MACD形态之底背离
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/base/gtja_zldc/">
+        国泰君安主力透视
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          均线策略
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+          均线策略
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/00_common_use_line/">
+        常用的均线有哪些？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/01_base/">
+        为什么说均线是神奇的线?（上）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/02_base/">
+        为什么说均线是神奇的线？（下）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/03_base/">
+        均线不同排列形态意味着什么？（上）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/04_base/">
+        均线不同排列形态意味着什么？（下）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/05_base/">
+        格兰威尔八大买卖法则（上）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/06_base/">
+        格兰威尔八大买卖法则（下）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/07_base/">
+        双均线战法（上）-单均线VS双均线
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/08_base/">
+        双均线战法（下）-双均线战法应用技巧
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/09_base/">
+        三均线战法（上）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/10_base/">
+        三均线战法（下）
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/average_line/11_base/">
+        一通百通，均线战法很轻松
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+          筹码分布
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_4">
+<span class="md-nav__icon md-icon"></span>
+          筹码分布
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../chip_distribution/double_peaks_and_valleys/">
+        分布形态之双峰填谷
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+          技术文章
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_5">
+<span class="md-nav__icon md-icon"></span>
+          技术文章
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/stock_that_could_double/">
+        可能翻倍的股票
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/time_chart_buy_skill/">
+        分时图表买点技巧
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/ant_on_the_tree/">
+        股票出现“蚂蚁上树”形态
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/short_op/">
+        一个短线操作方法
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/k_and_volume/">
+        k线与成交量有什么关系
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/5_15_30_60/">
+        5分钟，15分钟，30分钟，60分钟线分别说明什么？
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/silianyang_catches_the_daily_limit/">
+        四连阳抓涨停
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/main_shipping_method/">
+        主力出货手法
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/graphical_short_line_3_elements/">
+        图解短线3要素
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/time_chart_decide_the_buying_and_selling/">
+        让分时图决定买卖
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/not_buy_three_kline/">
+        出现这3种形态不能买
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../stock/tech_article/time_line_chart_skill/">
+        分时图使用技巧
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          债券
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          债券
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+          可转债
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_1">
+<span class="md-nav__icon md-icon"></span>
+          可转债
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/00_base/">
+        可转债交易规则
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/01_base/">
+        可转债基础
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/02_subscription/">
+        中签和收益
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/03_how_to_profit/">
+        获利方式
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/04_moment_sense/">
+        相关常识
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/05_cal_permium_rate/">
+        计算溢价率
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/06_cal_permium_rate/">
+        计算溢价率2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/07_debt/">
+        债性
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../bond/convertible_bonds/08_risk/">
+        风险
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          龙头股
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+          龙头股
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../articles/new_energy/">
+        新能源
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          同花顺
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+          同花顺
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
+          股票分类
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_10_1">
+<span class="md-nav__icon md-icon"></span>
+          股票分类
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ths/%E5%90%8C%E8%8A%B1%E9%A1%BA%E8%A1%8C%E4%B8%9A/">
+        同花顺行业
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ths/%E8%AF%81%E7%9B%91%E4%BC%9A%E8%A1%8C%E4%B8%9A/">
+        证监会行业
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ths/%E5%9C%B0%E5%9F%9F/">
+        地域
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ths/%E6%A6%82%E5%BF%B5/">
+        概念
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ths/%E8%A1%8C%E6%83%85%E4%B8%AD%E5%BF%83/">
+        行情中心
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          家装
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+          家装
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../home/%E8%A3%85%E4%BF%AE%E8%B4%AD%E4%B9%B0%E6%B8%85%E5%8D%95/">
+        装修购买清单
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../home/%E5%85%A8%E5%8C%85%E6%A6%82%E5%BF%B5/">
+        全包概念
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          统考
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+          统考
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../exam/%E4%BC%81%E4%B8%9A%E7%BB%8F%E8%90%A5%E6%88%98%E7%95%A5/">
+        企业经营战略
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          关于
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+          关于
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        制作方式
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../about/">
+        主题
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#etf_1">
+    核心和卫星应该如何选择ETF呢？
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="etf">ETF基金怎么配置</h1>
+<p>视频: <a href="https://caifuhao.eastmoney.com/news/20220126155404420930330">https://caifuhao.eastmoney.com/news/20220126155404420930330</a></p>
+<p>从跟踪指数的资产类别来区分，ETF主要可分为<code>股票ETF</code>、<code>债券ETF</code>、<code>商品ETF</code>和<code>货币ETF</code>几大类。在实操中，投资者往往会陷入这样的困境：<strong><em>如果为了追求高收益只配置股票ETF，尤其是一把梭哈重仓买入部分热点题材ETF，那持仓的体验仿佛坐过山车，涨起来虽然令人欣喜，一旦回调，幅度也不容小觑；而如果为了追求更低的风险仅仅购买债券ETF或货币ETF，收益是不太波动了，但收益率往往又难以令人满意。</em></strong></p>
+<p>资产配置的重要性就在此时显现了。通过资产配置，我们可以合理利用各类资产的风险收益特征和相关性去构建不同风险收益特征的资产配置组合，以较好地满足符合自身投资偏好的投资需求。并且从长远的角度看，有效的资产配置策略，有望帮助投资者实现 <strong>“在保持预期水平的同时承担更小的风险”</strong>，或是 <strong>“在承担同等风险水平的同时获取更高的收益”</strong> 的投资目标。</p>
+<p><strong>“核心—卫星策略”</strong> 就是ETF资产配置的主流策略之一。</p>
+<p>在核心—卫星策略中我们会构建一个投资组合，由核心产品和卫星产品构成。</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../imgs/etf%E5%8D%AB%E6%98%9F%E9%85%8D%E7%BD%AE.png"><img alt="etf卫星配置" src="../imgs/etf%E5%8D%AB%E6%98%9F%E9%85%8D%E7%BD%AE.png" title="etf卫星配置"/></a></p>
+<p>我们依靠核心产品稳住基本盘。一般作为核心的是风险适中，追求相对稳健收益的产品，力求稳中取胜。卫星产品则帮助我们实现更高收益的目标，当然，同时会带来更高的风险水平。常见的卫星投资方向为各行业的指数基金，尤其是部分覆盖市场热点题材的ETF。</p>
+<p>一般来说，核心是预期将长期持有的，而卫星则是需要在研究市场风格后，进行适当的主题轮动，寻找合适的行业主题基金，从而获得更高的收益。通常核心在资产配置中的占比会更大，卫星通过较小的仓位博取收益。</p>
+<h2 id="etf_1">核心和卫星应该如何选择ETF呢？</h2>
+<blockquote>
+<p><strong>--核心产品一般持有期较长，起到“定海神针”的作用，大部分投资者选择<code>宽基指数基金</code></strong>，比如<code>沪深300ETF</code>，<code>中证500ETF</code>等。具体的选择取决于投资者在中长期更看好哪一种产品。</p>
+<p><strong>--卫星产品如前所述，以行业主题为主</strong>，比如<code>新能源</code>、<code>军工</code>、<code>医药</code>、<code>消费ETF</code>等。卫星重在把握阶段性的投资机会，需要结合市场热点、当前趋势进行调整，致力于提升资产组合的收益率。</p>
+<p>部分投资者在核心和卫星的选择上不仅局限于<em>A股市场</em>，而是 <strong>放眼全球</strong>，譬如大家都关注的<code>纳斯达克指数</code>、<code>恒生指数</code>等。ETF恰好成为投资这些海外主要市场的利器，使我们在资产配置上的选择空间更加宽阔。<strong><em>有一点需要注意，我们在配置核心与卫星资产时，需要注意两者的相关性。既然是资产配置就需要考虑分散风险，因此尽量选择相关性较低的产品进行搭配，规避出现同涨同跌的现象。</em></strong></p>
+<p>总之，<code>核心—卫星策略</code>是一种简单且实用的资产配置理念，绕过了复杂的数学配置模型，对个人投资者来说比较友好，易于实践。能够在求稳的基础上，通过承担一定的风险追求更高的收益，能够以小仓位的主动管理方式跟上市场的变化，抓住阶段性机会。当然，<strong><em>该策略必然对于投资者的研究能力提出了要求</em></strong>。使用 <strong><em>该策略需要研究实时变化的市场，对行业有一定认识，同时需要投资者合理配置核心和卫星的仓位比例，具有一定操作难度</em></strong>。投资者具体配置时，<strong><em>需要结合自身的行业认知水平、风险偏好水平</em></strong> 来构建专属于自己的<code>核心—卫星投资</code>组合。</p>
+</blockquote>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            回到页面顶部
+          </a>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+<script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
