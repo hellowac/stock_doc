@@ -5,12 +5,18 @@ theme:
   name: 'material'
   language: zh
   features:
-    # - announce.dismiss
-    - content.code.annotate
+    - navigation.tabs # 顶部导航
+    - navigation.tabs.sticky # 顶部导航粘连
+    # - navigation.sections # 全部展开(非折叠状态)
+    # - navigation.expand # 子目录展开
+    - navigation.top  # 返回顶部按钮
+    - toc.follow
 
 # 图片灯箱效果
 plugins:
   - glightbox
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
 markdown_extensions:
   - tables
@@ -34,6 +40,43 @@ markdown_extensions:
   - pymdownx.tilde          # 删除线, 下标  参考: https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/?h=caret#caret-mark-tilde
                             #                   https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
 nav:
+  - 基础知识:
+    - 股票: invest/stock.md
+    - 新股申购: invest/subscription.md
+    - 股票委托: invest/entrust.md
+    - 股票分红: invest/dividend.md
+    - 什么是集合竞价: invest/call_auction.md
+    - 交易规则: invest/trading_rule.md
+    - 港股通: invest/hongkong_stock.md
+    - 港股通:开户条件: invest/hongkong_open_account.md
+    - 港股通:交易规则: invest/hongkong_trading_rule.md
+    - 港股通:交易费用: invest/hongkong_trading_cost.md
+    - 港股通:交易风险: invest/hongkong_trading_risk.md
+    - 市场版块: invest/markets.md
+    - 科创板: invest/st_board.md
+    - 科创板:精要: invest/st_board_guide.md
+    - 基金: invest/fund.md
+    - 基金入门: invest/finance_management01.md
+    - 基金常识: invest/finance_management02.md
+    - 常用术语: invest/finance_management03.md
+    - 指数基金: invest/finance_management04.md
+    - 债券基金: invest/finance_management05.md
+    - 基金理财二十问: invest/finance_20_question.md
+    - EFT基金精要: invest/finance_etf.md
+    - 指数基金家族: invest/index_fund.md
+    - ETF基金简介: invest/etf_fund_guide.md
+    - ETF基金优势: invest/etf_fund_advantage.md
+    - ETF VS 股票: invest/etf_vs_stock.md
+    - ETF基金怎么买: invest/etf_how_buy.md
+    - ETF基金怎么选: invest/etf_how_choice.md
+    - ETF基金投资策略: invest/etf_investment_strategy.md
+    - ETF基金配置策略: invest/etf_how_configure.md
+    - Smart Beta基金简介: invest/smart_beta_guide.md
+    - 债券: invest/bound.md
+    - 金融衍生工具: invest/derivatives.md
+    - 盘口指标: invest/handicap_indicator.md
+    - 筹码分布: invest/tech_analysis_chip_distibution.md
+    - 筹码精选: invest/tech_analysis_chip_choice.md
   - 一个散户的自我修养:
     - 【0】序言，前言: training/0.md
     - 第一部分 正视投资:
